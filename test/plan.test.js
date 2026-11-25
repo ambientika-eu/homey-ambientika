@@ -24,7 +24,12 @@ test('off and on again: back to the last mode, Smart when there is none', () => 
 test('a fixed fan step out of Smart or Auto: manual heat recovery', () => {
   assert.deepEqual(planCommand(base(), { fanSpeed: 'High' }), { operatingMode: 'ManualHeatRecovery', fanSpeed: 'High', humidityLevel: 'Normal', lightSensorLevel: 'Low' });
   assert.equal(planCommand(base({ operatingMode: 'Auto' }), { fanSpeed: 'Low' }).operatingMode, 'ManualHeatRecovery');
-  assert.equal(planCommand(base({ operatingMode: 'Night' }), { fanSpeed: 'Low' }).operatingMode, 'Night');
+  // Night, Away and Surveillance choose the step themselves as well
+  for (const m of ['Night', 'AwayHome', 'Surveillance']) assert.equal(planCommand(base({ operatingMode: m }), { fanSpeed: 'Low' }).operatingMode, 'ManualHeatRecovery');
+  for (const m of ['Intake', 'Expulsion', 'TimedExpulsion', 'ManualHeatRecovery']) assert.equal(planCommand(base({ operatingMode: m }), { fanSpeed: 'Low' }).operatingMode, m);
+  assert.equal(planCommand(base({ operatingMode: 'Off', lastOperatingMode: 'Night' }), { fanSpeed: 'Low' }).operatingMode, 'ManualHeatRecovery');
+  // switching off with a fan step in the same command stays off
+  assert.equal(planCommand(base(), { fanSpeed: 'Low', power: false }).operatingMode, 'Off');
   // with a mode in the same command the mode wins
   assert.equal(planCommand(base(), { fanSpeed: 'Low', operatingMode: 'Auto' }).operatingMode, 'Auto');
   // a unit that is off runs in its last fixed mode again
@@ -57,6 +62,8 @@ test('capability values of a status packet', () => {
     ambientika_light_sensor: 'high',
     measure_temperature: 21.4,
     measure_humidity: 100,
+    'measure_temperature.avg': null,
+    'measure_humidity.avg': null,
     ambientika_air_quality: 'very_good',
     ambientika_filter_status: 'bad',
     alarm_moisture: true,

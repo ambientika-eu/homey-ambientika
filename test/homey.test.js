@@ -151,6 +151,10 @@ test('on/off: off is the mode Off, on goes back to the last mode', async () => {
   await m.userSets('onoff', true);
   assert.equal(fake.unit(MASTER).status.operatingMode, 'Auto');
   await shows(m, 'ambientika_operating_mode', 'auto');
+  // the unit reported every command: nothing is waited for, nothing is complained about
+  await sleep(1800);
+  assert.equal(w.app.accounts.get(fake.USER.toLowerCase()).stateOf(MASTER).expected, null);
+  assert.equal(w.app.logs.filter((l) => /still reports/.test(l)).length, 0);
 });
 
 test('fixed fan step in Smart: manual heat recovery; several capabilities at once are one command', async () => {
@@ -213,44 +217,113 @@ test('filter: status trigger, reset by button and by flow; a Slave cannot reset'
   await w.run('actions', 'reset_filter', { device: m });
   await shows(m, 'ambientika_filter_status', 'good');
   await assert.rejects(w.run('actions', 'reset_filter', { device: s }), { message: w.homey.__('errors.slaveFilter') });
+  // a filter that is Good already: nothing is sent
+  fake.clear();
+  await w.run('actions', 'reset_filter', { device: m });
+  assert.equal(fake.log.filter((l) => l.kind === 'reset-filter').length, 0);
+  // a yellow filter is a reset case as well
+  fake.set(MASTER, { filtersStatus: 'Medium' });
+  await shows(m, 'ambientika_filter_status', 'medium');
+  await w.run('actions', 'reset_filter', { device: m });
+  await shows(m, 'ambientika_filter_status', 'good');
+  assert.ok(w.app.logs.some((l) => /Filter reset for Flur .*confirmed/.test(l)));
 });
 
-test('a Slave shows its sensors, refuses commands with the explanation', async () => {
+test('a Slave shows its sensors and the mode of its zone Master, refuses commands with the explanation', async () => {
   const w = await world('nl');
+  fake.set(SLAVE, { operatingMode: 'Auto' }); // its own field, left over from before it was coupled
+  fake.clear();
   const [s] = await w.addSerials(SLAVE);
-  await shows(s, 'ambientika_operating_mode', 'smart');
+  await shows(s, 'ambientika_operating_mode', 'smart', 'the mode of the Master, not its own Auto');
+  assert.ok(fake.counts[`status:${MASTER}`] > 0, 'the zone Master is read although it has no Homey device');
   assert.equal(s.hasCapability('onoff'), false);
+  assert.equal(s.hasCapability('measure_temperature.avg'), true);
   await assert.rejects(s.userSets('ambientika_operating_mode', 'auto'), /not setable/);
   await assert.rejects(w.run('actions', 'set_operating_mode', { device: s, mode: 'auto' }), { message: w.homey.__('errors.slave') });
   assert.match(w.homey.__('errors.slave'), /Slave/);
   assert.equal(fake.log.filter((l) => l.kind === 'change-mode').length, 0);
+  // the Master changes its mode: the Slave follows with the same reading, with a trigger
+  fake.set(MASTER, { operatingMode: 'Night' });
+  await shows(s, 'ambientika_operating_mode', 'night');
+  assert.equal(w.triggered('operating_mode_changed').length, 1);
+  // a Slave in another house with the same zone number is not its Master
+  assert.equal(w.app.accounts.get(fake.USER.toLowerCase()).zoneMaster(w.app.accounts.get(fake.USER.toLowerCase()).stateOf(SLAVE)).serial, MASTER);
+});
+
+test('a Slave whose Master does not answer shows its own mode', async () => {
+  const w = await world();
+  fake.set(SLAVE, { operatingMode: 'Auto' });
+  fake.fault(MASTER, '500');
+  const [s] = await w.addSerials(SLAVE);
+  await shows(s, 'ambientika_operating_mode', 'auto');
+  fake.fault(MASTER, null);
+  await shows(s, 'ambientika_operating_mode', 'smart');
+});
+
+test('a Master with a Homey device and its Slave: a command at the Master shows on the Slave at once', async () => {
+  const w = await world();
+  const [m, s] = await w.addSerials(MASTER, SLAVE);
+  await shows(s, 'ambientika_operating_mode', 'smart');
+  await m.userSets('ambientika_operating_mode', 'away_home');
+  assert.equal(s.getCapabilityValue('ambientika_operating_mode'), 'away_home');
+});
+
+test('a command the unit does not carry out: shown as sent while waiting, then the unit counts again', async () => {
+  const w = await world();
+  const [m] = await w.addSerials(MASTER);
+  await shows(m, 'ambientika_operating_mode', 'smart');
+  fake.deaf(MASTER, true);
+  await m.userSets('ambientika_operating_mode', 'night');
+  await sleep(700); // two readings later it still shows what was sent
+  assert.equal(m.getCapabilityValue('ambientika_operating_mode'), 'night');
+  await shows(m, 'ambientika_operating_mode', 'smart', 'back to what the unit reports');
+  assert.ok(w.app.logs.some((l) => /still reports operating mode Smart instead of Night/.test(l)), 'the log says so');
+  // a unit that reports late: no flicker back in between
+  fake.deaf(MASTER, false);
+  await m.userSets('ambientika_humidity_level', 'dry');
+  const seen = new Set();
+  const t = setInterval(() => seen.add(m.getCapabilityValue('ambientika_humidity_level')), 20);
+  await sleep(900);
+  clearInterval(t);
+  assert.deepEqual([...seen], ['dry']);
+});
+
+test('measured values pass the plausibility check', async () => {
+  const w = await world();
+  const [m] = await w.addSerials(MASTER);
+  await shows(m, 'measure_humidity', 55);
+  fake.set(MASTER, { humidity: 0, temperature: 999 });
+  await sleep(700);
+  assert.equal(m.getCapabilityValue('measure_humidity'), 55);
+  assert.equal(m.getCapabilityValue('measure_temperature'), 21);
+  fake.set(MASTER, { humidity: 130, temperature: 22.5 });
+  await shows(m, 'measure_humidity', 100);
+  await shows(m, 'measure_temperature', 22.5);
 });
 
 test('a Slave that becomes a Master gets its controls', async () => {
   const w = await world();
-  TIMING.unitsIntervalS = 0.5;
-  try {
-    const [s] = await w.addSerials(SLAVE);
-    await shows(s, 'ambientika_operating_mode', 'smart');
-    fake.unit(SLAVE).role = 'Master';
-    fake.set(SLAVE, { deviceRole: 'Master' });
-    await until(() => s.hasCapability('onoff'), 4000, 'controls added');
-    assert.equal(s.getStore().role, 'Master');
-    assert.equal(s.capOptions.ambientika_operating_mode.setable, true);
-    assert.equal(s.getSettings().role, 'Master');
-    await shows(s, 'onoff', true);
-    await s.userSets('ambientika_fan_speed', 'low');
-    assert.equal(fake.unit(SLAVE).status.fanSpeed, 'Low');
-    await s.userSets('button.reset_filter', true);
-  } finally {
-    TIMING.unitsIntervalS = 600;
-  }
+  const [s] = await w.addSerials(SLAVE);
+  await shows(s, 'ambientika_operating_mode', 'smart');
+  // the unit itself reports the new role in its status; the list of units is still the old one
+  fake.set(SLAVE, { deviceRole: 'Master', filtersStatus: 'Bad' });
+  await until(() => s.hasCapability('onoff'), 4000, 'controls added');
+  assert.equal(s.getStore().role, 'Master');
+  assert.equal(s.capOptions.ambientika_operating_mode.setable, true);
+  assert.equal(s.getSettings().role, 'Master');
+  await shows(s, 'onoff', true);
+  await s.userSets('ambientika_fan_speed', 'low');
+  assert.equal(fake.unit(SLAVE).status.fanSpeed, 'Low');
+  assert.equal(fake.unit(SLAVE).status.operatingMode, 'ManualHeatRecovery');
+  await s.userSets('button.reset_filter', true);
+  assert.ok(fake.log.some((l) => l.kind === 'reset-filter' && l.serial === SLAVE));
 });
 
 test('night detected: triggers and condition', async () => {
   const w = await world();
   const [m] = await w.addSerials(MASTER);
   await shows(m, 'ambientika_night', false);
+  assert.equal(w.triggered('night_ended').length, 0);
   fake.set(MASTER, { nightAlarm: true });
   await shows(m, 'ambientika_night', true);
   assert.equal(w.triggered('night_started').length, 1);
@@ -378,6 +451,32 @@ test('restart of the app: the devices come back from the stored login', async ()
   driver2.devices.push(d);
   await d.onInit();
   await shows(d, 'measure_temperature', 21);
+});
+
+test('a device added with version 1.0.0 gets the averaged values', async () => {
+  const w = await world();
+  const list = await w.pair();
+  const pairing = list.find((p) => p.data.id === MASTER);
+  pairing.capabilities = APP.drivers[0].capabilities.filter((c) => !c.endsWith('.avg'));
+  const d = await w.add(pairing);
+  assert.equal(d.hasCapability('measure_temperature.avg'), true);
+  assert.equal(d.hasCapability('measure_humidity.avg'), true);
+  await shows(d, 'measure_temperature', 21);
+});
+
+test('wrong password: the next sign-in comes later each time', async () => {
+  const w = await world();
+  const [m] = await w.addSerials(MASTER);
+  await shows(m, 'measure_temperature', 21);
+  fake.outage('refuse-auth');
+  fake.expire();
+  await until(() => m.available === false, 5000, 'unavailable');
+  fake.clear();
+  await sleep(1500);
+  // 0.3 s, then 0.6 s, 0.6 s ...: two or three tries, not one per reading (0.3 s -> five)
+  assert.ok(fake.counts.auth >= 2 && fake.counts.auth <= 3, `sign-ins: ${fake.counts.auth}`);
+  fake.outage('ok');
+  await until(() => m.available === true, 4000, 'available again without a repair once the password is accepted again');
 });
 
 test('translations: every locale has the same keys, every text of app.json in every language', () => {

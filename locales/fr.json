@@ -9,7 +9,7 @@
     "login": "Adresse e-mail ou mot de passe refusé. Utilisez les identifiants de l'app Ambientika.",
     "connect": "Le cloud Ambientika n'est pas joignable : __message__",
     "otherAccount": "Cette unité appartient à un autre compte Ambientika. Connectez-vous avec les identifiants utilisés pour l'ajouter.",
-    "slaveFilter": "Un Slave a son propre compteur de filtre ; réinitialisez-le directement sur l'unité."
+    "slaveFilter": "Cette unité est un Slave : son compteur de filtre ne peut pas être réinitialisé à distance. Réinitialisez le filtre sur le Master de la zone ; le compteur d'un Slave n'est effacé que par une réinitialisation d'usine de l'unité."
   },
   "mode": {
     "smart": "Smart",

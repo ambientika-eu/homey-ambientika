@@ -9,7 +9,7 @@
     "login": "Nie zaakceptowano adresu e-mail lub hasła. Użyj danych z aplikacji Ambientika.",
     "connect": "Chmura Ambientika jest niedostępna: __message__",
     "otherAccount": "To urządzenie należy do innego konta Ambientika. Zaloguj się danymi, z którymi zostało dodane.",
-    "slaveFilter": "Slave ma własny licznik filtra; wyzeruj go bezpośrednio na urządzeniu."
+    "slaveFilter": "To urządzenie jest Slave: jego licznika filtra nie można wyzerować zdalnie. Wyzeruj filtr na Masterze strefy; licznik Slave kasuje się tylko po przywróceniu ustawień fabrycznych urządzenia."
   },
   "mode": {
     "smart": "Smart",

@@ -9,7 +9,7 @@
     "login": "Correo o contraseña no aceptados. Use los datos de la app Ambientika.",
     "connect": "La nube de Ambientika no está disponible: __message__",
     "otherAccount": "Esta unidad pertenece a otra cuenta de Ambientika. Inicie sesión con los datos con los que se añadió.",
-    "slaveFilter": "Un Slave tiene su propio contador de filtro; reinícielo en la unidad."
+    "slaveFilter": "Esta unidad es un Slave: su contador de filtro no se puede reiniciar a distancia. Reinicie el filtro en el Master de la zona; el contador de un Slave solo se borra restableciendo la unidad a los ajustes de fábrica."
   },
   "mode": {
     "smart": "Smart",

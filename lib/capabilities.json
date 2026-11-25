@@ -7,6 +7,8 @@
     "ambientika_light_sensor",
     "measure_temperature",
     "measure_humidity",
+    "measure_temperature.avg",
+    "measure_humidity.avg",
     "ambientika_air_quality",
     "alarm_moisture",
     "ambientika_filter_status",
@@ -14,6 +16,32 @@
     "button.reset_filter"
   ],
   "options": {
+    "measure_temperature.avg": {
+      "title": {
+        "en": "Temperature (averaged)",
+        "de": "Temperatur (gemittelt)",
+        "nl": "Temperatuur (gemiddeld)",
+        "it": "Temperatura (media)",
+        "fr": "Température (moyenne)",
+        "es": "Temperatura (media)",
+        "da": "Temperatur (gennemsnit)",
+        "sv": "Temperatur (medelvärde)",
+        "pl": "Temperatura (średnia)"
+      }
+    },
+    "measure_humidity.avg": {
+      "title": {
+        "en": "Humidity (averaged)",
+        "de": "Luftfeuchtigkeit (gemittelt)",
+        "nl": "Luchtvochtigheid (gemiddeld)",
+        "it": "Umidità (media)",
+        "fr": "Humidité (moyenne)",
+        "es": "Humedad (media)",
+        "da": "Luftfugtighed (gennemsnit)",
+        "sv": "Luftfuktighet (medelvärde)",
+        "pl": "Wilgotność (średnia)"
+      }
+    },
     "alarm_moisture": {
       "title": {
         "en": "Humidity Alarm",

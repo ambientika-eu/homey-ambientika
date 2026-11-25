@@ -1,7 +1,7 @@
 {
   "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
   "id": "eu.ambientika",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "compatibility": ">=12.2.0",
   "sdk": 3,
   "platforms": [
@@ -1013,15 +1013,15 @@
           "pl": "Ustaw bieg wentylatora na [[fan_speed]]"
         },
         "hint": {
-          "en": "In the modes Smart and Auto the unit chooses the speed itself: a fixed speed switches it to manual heat recovery.",
-          "de": "In den Modi Smart und Auto wählt das Gerät die Stufe selbst: Eine feste Stufe schaltet auf manuelle Wärmerückgewinnung.",
-          "nl": "In de modi Smart en Auto kiest de unit zelf de snelheid: een vaste snelheid schakelt naar handmatig met warmteterugwinning.",
-          "it": "Nelle modalità Smart e Auto l'unità sceglie da sola la velocità: una velocità fissa passa al recupero di calore manuale.",
-          "fr": "En mode Smart et Auto, l'unité choisit elle-même la vitesse : une vitesse fixe passe en récupération de chaleur manuelle.",
-          "es": "En los modos Smart y Auto la unidad elige la velocidad: una velocidad fija cambia a recuperación de calor manual.",
-          "da": "I tilstandene Smart og Auto vælger enheden selv trinnet: et fast trin skifter til manuel varmegenvinding.",
-          "sv": "I lägena Smart och Auto väljer aggregatet själv steget: ett fast steg växlar till manuell värmeåtervinning.",
-          "pl": "W trybach Smart i Auto urządzenie samo wybiera bieg: stały bieg przełącza na ręczny odzysk ciepła."
+          "en": "In the modes Smart, Auto, Night, Away and Surveillance the unit chooses the speed itself: a fixed speed switches it to manual heat recovery.",
+          "de": "In den Modi Smart, Auto, Nacht, Abwesend und Überwachung wählt das Gerät die Stufe selbst: Eine feste Stufe schaltet auf manuelle Wärmerückgewinnung.",
+          "nl": "In de modi Smart, Auto, Nacht, Afwezig en Bewaking kiest de unit zelf de snelheid: een vaste snelheid schakelt naar handmatig met warmteterugwinning.",
+          "it": "Nelle modalità Smart, Auto, Notte, Assente e Sorveglianza l'unità sceglie da sola la velocità: una velocità fissa passa al recupero di calore manuale.",
+          "fr": "En mode Smart, Auto, Nuit, Absent et Surveillance, l'unité choisit elle-même la vitesse : une vitesse fixe passe en récupération de chaleur manuelle.",
+          "es": "En los modos Smart, Auto, Noche, Ausente y Vigilancia la unidad elige la velocidad: una velocidad fija cambia a recuperación de calor manual.",
+          "da": "I tilstandene Smart, Auto, Nat, Ude og Overvågning vælger enheden selv trinnet: et fast trin skifter til manuel varmegenvinding.",
+          "sv": "I lägena Smart, Auto, Natt, Borta och Övervakning väljer aggregatet själv steget: ett fast steg växlar till manuell värmeåtervinning.",
+          "pl": "W trybach Smart, Auto, Noc, Poza domem i Nadzór urządzenie samo wybiera bieg: stały bieg przełącza na ręczny odzysk ciepła."
         },
         "args": [
           {
@@ -1328,6 +1328,8 @@
         "ambientika_light_sensor",
         "measure_temperature",
         "measure_humidity",
+        "measure_temperature.avg",
+        "measure_humidity.avg",
         "ambientika_air_quality",
         "alarm_moisture",
         "ambientika_filter_status",
@@ -1335,6 +1337,32 @@
         "button.reset_filter"
       ],
       "capabilitiesOptions": {
+        "measure_temperature.avg": {
+          "title": {
+            "en": "Temperature (averaged)",
+            "de": "Temperatur (gemittelt)",
+            "nl": "Temperatuur (gemiddeld)",
+            "it": "Temperatura (media)",
+            "fr": "Température (moyenne)",
+            "es": "Temperatura (media)",
+            "da": "Temperatur (gennemsnit)",
+            "sv": "Temperatur (medelvärde)",
+            "pl": "Temperatura (średnia)"
+          }
+        },
+        "measure_humidity.avg": {
+          "title": {
+            "en": "Humidity (averaged)",
+            "de": "Luftfeuchtigkeit (gemittelt)",
+            "nl": "Luchtvochtigheid (gemiddeld)",
+            "it": "Umidità (media)",
+            "fr": "Humidité (moyenne)",
+            "es": "Humedad (media)",
+            "da": "Luftfugtighed (gennemsnit)",
+            "sv": "Luftfuktighet (medelvärde)",
+            "pl": "Wilgotność (średnia)"
+          }
+        },
         "alarm_moisture": {
           "title": {
             "en": "Humidity Alarm",

@@ -9,7 +9,7 @@
     "login": "E-mailadresse eller adgangskode ikke accepteret. Brug login til Ambientika-appen.",
     "connect": "Ambientika-skyen kan ikke nås: __message__",
     "otherAccount": "Denne enhed hører til en anden Ambientika-konto. Log ind med det login, enheden blev tilføjet med.",
-    "slaveFilter": "En Slave har sin egen filtertæller; nulstil den direkte på enheden."
+    "slaveFilter": "Denne enhed er en Slave: dens filtertæller kan ikke nulstilles på afstand. Nulstil filteret på zonens Master; en Slaves tæller slettes kun ved at nulstille enheden til fabriksindstillinger."
   },
   "mode": {
     "smart": "Smart",

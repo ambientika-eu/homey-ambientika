@@ -163,6 +163,8 @@ const MASTER_CAPS = [
   'ambientika_light_sensor',
   'measure_temperature',
   'measure_humidity',
+  'measure_temperature.avg',
+  'measure_humidity.avg',
   'ambientika_air_quality',
   'alarm_moisture',
   'ambientika_filter_status',
@@ -170,6 +172,8 @@ const MASTER_CAPS = [
   'button.reset_filter',
 ];
 const CAP_OPTIONS = {
+  'measure_temperature.avg': { title: fromH((h) => h.temp_avg) },
+  'measure_humidity.avg': { title: fromH((h) => h.hum_avg) },
   alarm_moisture: { title: fromH((h) => h.humalarm) },
   'button.reset_filter': { title: fromH((h) => h.reset), maintenanceAction: true },
 };

@@ -9,7 +9,7 @@
     "login": "E-mailadres of wachtwoord niet geaccepteerd. Gebruik de gegevens van de Ambientika-app.",
     "connect": "De Ambientika-cloud is niet bereikbaar: __message__",
     "otherAccount": "Deze unit hoort bij een ander Ambientika-account. Meld u aan met de gegevens waarmee de unit is toegevoegd.",
-    "slaveFilter": "Een Slave heeft een eigen filterteller; reset die op de unit zelf."
+    "slaveFilter": "Deze unit is een Slave: de filterteller kan niet op afstand worden gereset. Reset het filter bij de Master van de zone; de teller van een Slave wordt alleen gewist door de unit terug te zetten naar de fabrieksinstellingen."
   },
   "mode": {
     "smart": "Smart",

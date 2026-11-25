@@ -9,7 +9,7 @@
     "login": "E-mail address or password not accepted. Please use the login of the Ambientika app.",
     "connect": "The Ambientika cloud cannot be reached: __message__",
     "otherAccount": "This unit belongs to another Ambientika account. Please sign in with the login under which the unit was added.",
-    "slaveFilter": "A Slave keeps its own filter counter; please reset it at the unit."
+    "slaveFilter": "This unit is a Slave: its filter counter cannot be reset remotely. Reset the filter at the Master of its zone; the counter of a Slave is cleared only by a factory reset of the unit."
   },
   "mode": {
     "smart": "Smart",

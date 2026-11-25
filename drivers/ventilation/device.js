@@ -22,15 +22,37 @@ class VentilationDevice extends Homey.Device {
     this.deleted = false;
     this.known = false; // a first status has been shown: from then on changes fire the flow triggers
 
-    this.registerMultipleCapabilityListener(
-      Object.keys(SETTERS).filter((c) => this.hasCapability(c)),
-      async (values) => this.set(values),
-      300,
-    );
-    if (this.hasCapability('button.reset_filter')) {
-      this.registerCapabilityListener('button.reset_filter', async () => this.resetFilter());
-    }
+    await this.ensureCapabilities();
+    this.listening = new Set();
+    this.listen();
     this.connect();
+  }
+
+  /** A device added with an earlier version of the app gets the capabilities that came later. */
+  async ensureCapabilities() {
+    const wanted = this.slave ? CAPS.master.filter((c) => !MASTER_ONLY.includes(c)) : CAPS.master;
+    for (const cap of wanted) {
+      if (this.hasCapability(cap)) continue;
+      try {
+        await this.addCapability(cap);
+        if (CAPS.options[cap]) await this.setCapabilityOptions(cap, CAPS.options[cap]);
+      } catch (e) {
+        this.error(`addCapability ${cap}`, e);
+      }
+    }
+  }
+
+  /** Listens to the capabilities that can be set and have no listener yet. */
+  listen() {
+    const setters = Object.keys(SETTERS).filter((c) => this.hasCapability(c) && !this.listening.has(c));
+    if (setters.length > 0) {
+      this.registerMultipleCapabilityListener(setters, async (values) => this.set(values), 300);
+      for (const c of setters) this.listening.add(c);
+    }
+    if (this.hasCapability('button.reset_filter') && !this.listening.has('button.reset_filter')) {
+      this.registerCapabilityListener('button.reset_filter', async () => this.resetFilter());
+      this.listening.add('button.reset_filter');
+    }
   }
 
   /** Joins the Account of its login. */
@@ -69,6 +91,7 @@ class VentilationDevice extends Homey.Device {
   // ---------------------------------------------------------------- from the Account
 
   async onStatus(status) {
+    await this.noteRole(status.role);
     const values = capabilityValues(status);
     const before = {};
     for (const [cap, value] of Object.entries(values)) {
@@ -110,43 +133,37 @@ class VentilationDevice extends Homey.Device {
   }
 
   async onUnit(unit) {
-    const roleIds = this.driver.constructor.ROLE_IDS || {};
-    const roleId = roleIds[unit.role];
     const settings = {
-      role: roleId ? this.homey.__(`role.${roleId}`) : unit.role || '-',
       zone: unit.zone === null ? '-' : String(unit.zone + 1),
       room: unit.room || '-',
       house: unit.house || '-',
     };
     const current = this.getSettings();
     if (Object.entries(settings).some(([k, v]) => current[k] !== v)) await this.setSettings(settings).catch(this.error);
+    // The role of the list of units counts until the unit reports its own in a status.
+    if (!this.liveRole) await this.noteRole(unit.role, false);
+  }
 
+  /**
+   * The current role of the unit. A Slave that became a Master gets its controls;
+   * a Master that became a Slave keeps them and refuses commands with the explanation.
+   */
+  async noteRole(role, live = true) {
+    if (typeof role !== 'string' || role === '') return;
+    if (live) this.liveRole = role;
+    if (role === this.getStore().role) return;
     const wasSlave = this.slave;
-    if (unit.role && unit.role !== this.getStore().role) {
-      await this.setStoreValue('role', unit.role);
-      this.log(`Role is now ${unit.role}`);
-    }
-    // Slave -> Master: the unit can be set now.
+    await this.setStoreValue('role', role);
+    this.log(`Role is now ${role}`);
+    const roleId = (this.driver.constructor.ROLE_IDS || {})[role];
+    await this.setSettings({ role: roleId ? this.homey.__(`role.${roleId}`) : role }).catch(this.error);
     if (wasSlave && !this.slave) await this.becomeMaster();
   }
 
   async becomeMaster() {
-    const added = [];
-    for (const cap of CAPS.master) {
-      if (this.hasCapability(cap)) continue;
-      try {
-        await this.addCapability(cap);
-        added.push(cap);
-        if (CAPS.options[cap]) await this.setCapabilityOptions(cap, CAPS.options[cap]);
-      } catch (e) {
-        this.error(`addCapability ${cap}`, e);
-      }
-    }
+    await this.ensureCapabilities();
     await this.setCapabilityOptions('ambientika_operating_mode', { setable: true }).catch(this.error);
-    const setters = added.filter((c) => SETTERS[c]);
-    // The operating mode keeps its listener from onInit; the new ones get their own.
-    if (setters.length > 0) this.registerMultipleCapabilityListener(setters, async (values) => this.set(values), 300);
-    if (added.includes('button.reset_filter')) this.registerCapabilityListener('button.reset_filter', async () => this.resetFilter());
+    this.listen();
   }
 
   async onRemoved() {

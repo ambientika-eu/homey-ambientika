@@ -9,7 +9,7 @@
     "login": "E-Mail-Adresse oder Passwort nicht angenommen. Bitte die Zugangsdaten der Ambientika App verwenden.",
     "connect": "Die Ambientika-Cloud ist nicht erreichbar: __message__",
     "otherAccount": "Dieses Gerät gehört zu einem anderen Ambientika-Konto. Bitte mit den Zugangsdaten anmelden, mit denen das Gerät hinzugefügt wurde.",
-    "slaveFilter": "Ein Slave hat einen eigenen Filterzähler; bitte direkt am Gerät zurücksetzen."
+    "slaveFilter": "Dieses Gerät ist ein Slave: Sein Filterzähler lässt sich nicht aus der Ferne zurücksetzen. Bitte den Filter am Master der Zone zurücksetzen; der Zähler eines Slaves wird nur durch das Zurücksetzen des Geräts auf Werkseinstellungen gelöscht."
   },
   "mode": {
     "smart": "Smart",

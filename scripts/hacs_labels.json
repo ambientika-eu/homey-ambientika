@@ -55,7 +55,9 @@
    "slave_equal_master": "Slave, same direction as Master",
    "slave_opposite_master": "Slave, opposite direction to Master",
    "not_configured": "Not configured"
-  }
+  },
+  "temp_avg": "Temperature (averaged)",
+  "hum_avg": "Humidity (averaged)"
  },
  "de": {
   "mode_name": "Modus",
@@ -113,7 +115,9 @@
    "slave_equal_master": "Slave, gleichläufig zum Master",
    "slave_opposite_master": "Slave, gegenläufig zum Master",
    "not_configured": "Nicht konfiguriert"
-  }
+  },
+  "temp_avg": "Temperatur (gemittelt)",
+  "hum_avg": "Luftfeuchtigkeit (gemittelt)"
  },
  "nl": {
   "mode_name": "Modus",
@@ -171,7 +175,9 @@
    "slave_equal_master": "Slave, zelfde richting als Master",
    "slave_opposite_master": "Slave, tegengesteld aan Master",
    "not_configured": "Niet geconfigureerd"
-  }
+  },
+  "temp_avg": "Temperatuur (gemiddeld)",
+  "hum_avg": "Luchtvochtigheid (gemiddeld)"
  },
  "it": {
   "mode_name": "Modalità",
@@ -229,7 +235,9 @@
    "slave_equal_master": "Slave, stesso verso del Master",
    "slave_opposite_master": "Slave, verso opposto al Master",
    "not_configured": "Non configurato"
-  }
+  },
+  "temp_avg": "Temperatura (media)",
+  "hum_avg": "Umidità (media)"
  },
  "fr": {
   "mode_name": "Mode",
@@ -287,7 +295,9 @@
    "slave_equal_master": "Slave, même sens que le Master",
    "slave_opposite_master": "Slave, sens opposé au Master",
    "not_configured": "Non configuré"
-  }
+  },
+  "temp_avg": "Température (moyenne)",
+  "hum_avg": "Humidité (moyenne)"
  },
  "es": {
   "mode_name": "Modo",
@@ -345,7 +355,9 @@
    "slave_equal_master": "Slave, mismo sentido que el Master",
    "slave_opposite_master": "Slave, sentido opuesto al Master",
    "not_configured": "Sin configurar"
-  }
+  },
+  "temp_avg": "Temperatura (media)",
+  "hum_avg": "Humedad (media)"
  },
  "da": {
   "mode_name": "Tilstand",
@@ -403,7 +415,9 @@
    "slave_equal_master": "Slave, samme retning som Master",
    "slave_opposite_master": "Slave, modsat retning af Master",
    "not_configured": "Ikke konfigureret"
-  }
+  },
+  "temp_avg": "Temperatur (gennemsnit)",
+  "hum_avg": "Luftfugtighed (gennemsnit)"
  },
  "sv": {
   "mode_name": "Läge",
@@ -461,7 +475,9 @@
    "slave_equal_master": "Slave, samma riktning som Master",
    "slave_opposite_master": "Slave, motsatt riktning mot Master",
    "not_configured": "Inte konfigurerad"
-  }
+  },
+  "temp_avg": "Temperatur (medelvärde)",
+  "hum_avg": "Luftfuktighet (medelvärde)"
  },
  "pl": {
   "mode_name": "Tryb",
@@ -519,6 +535,8 @@
    "slave_equal_master": "Slave, zgodnie z Master",
    "slave_opposite_master": "Slave, przeciwnie do Master",
    "not_configured": "Nieskonfigurowany"
-  }
+  },
+  "temp_avg": "Temperatura (średnia)",
+  "hum_avg": "Wilgotność (średnia)"
  }
 }

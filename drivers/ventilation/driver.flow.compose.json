@@ -828,15 +828,15 @@
         "pl": "Ustaw bieg wentylatora na [[fan_speed]]"
       },
       "hint": {
-        "en": "In the modes Smart and Auto the unit chooses the speed itself: a fixed speed switches it to manual heat recovery.",
-        "de": "In den Modi Smart und Auto wählt das Gerät die Stufe selbst: Eine feste Stufe schaltet auf manuelle Wärmerückgewinnung.",
-        "nl": "In de modi Smart en Auto kiest de unit zelf de snelheid: een vaste snelheid schakelt naar handmatig met warmteterugwinning.",
-        "it": "Nelle modalità Smart e Auto l'unità sceglie da sola la velocità: una velocità fissa passa al recupero di calore manuale.",
-        "fr": "En mode Smart et Auto, l'unité choisit elle-même la vitesse : une vitesse fixe passe en récupération de chaleur manuelle.",
-        "es": "En los modos Smart y Auto la unidad elige la velocidad: una velocidad fija cambia a recuperación de calor manual.",
-        "da": "I tilstandene Smart og Auto vælger enheden selv trinnet: et fast trin skifter til manuel varmegenvinding.",
-        "sv": "I lägena Smart och Auto väljer aggregatet själv steget: ett fast steg växlar till manuell värmeåtervinning.",
-        "pl": "W trybach Smart i Auto urządzenie samo wybiera bieg: stały bieg przełącza na ręczny odzysk ciepła."
+        "en": "In the modes Smart, Auto, Night, Away and Surveillance the unit chooses the speed itself: a fixed speed switches it to manual heat recovery.",
+        "de": "In den Modi Smart, Auto, Nacht, Abwesend und Überwachung wählt das Gerät die Stufe selbst: Eine feste Stufe schaltet auf manuelle Wärmerückgewinnung.",
+        "nl": "In de modi Smart, Auto, Nacht, Afwezig en Bewaking kiest de unit zelf de snelheid: een vaste snelheid schakelt naar handmatig met warmteterugwinning.",
+        "it": "Nelle modalità Smart, Auto, Notte, Assente e Sorveglianza l'unità sceglie da sola la velocità: una velocità fissa passa al recupero di calore manuale.",
+        "fr": "En mode Smart, Auto, Nuit, Absent et Surveillance, l'unité choisit elle-même la vitesse : une vitesse fixe passe en récupération de chaleur manuelle.",
+        "es": "En los modos Smart, Auto, Noche, Ausente y Vigilancia la unidad elige la velocidad: una velocidad fija cambia a recuperación de calor manual.",
+        "da": "I tilstandene Smart, Auto, Nat, Ude og Overvågning vælger enheden selv trinnet: et fast trin skifter til manuel varmegenvinding.",
+        "sv": "I lägena Smart, Auto, Natt, Borta och Övervakning väljer aggregatet själv steget: ett fast steg växlar till manuell värmeåtervinning.",
+        "pl": "W trybach Smart, Auto, Noc, Poza domem i Nadzór urządzenie samo wybiera bieg: stały bieg przełącza na ręczny odzysk ciepła."
       },
       "args": [
         {

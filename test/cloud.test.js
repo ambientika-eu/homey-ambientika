@@ -30,7 +30,7 @@ test('sign-in, units over houses and rooms, status', async () => {
   const units = await c.units();
   assert.equal(units.length, 5);
   const flur = units.find((u) => u.name === 'Flur');
-  assert.deepEqual(flur, { serial: 'A0B1C2D3E402', name: 'Flur', role: 'Master', zone: 0, type: 'Smart', room: 'Haus', house: 'Zuhause' });
+  assert.deepEqual(flur, { serial: 'A0B1C2D3E402', name: 'Flur', role: 'Master', zone: 0, type: 'Smart', room: 'Haus', house: 'Zuhause', houseId: '1' });
   const st = await c.status('A0B1C2D3E402');
   assert.equal(st.operatingMode, 'Smart');
   assert.equal(st.temperature, 21);

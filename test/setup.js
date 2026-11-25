@@ -17,9 +17,12 @@ Object.assign(TIMING, {
   unitsIntervalS: 600,
   retryFirstS: 0.2,
   retryMaxS: 0.8,
-  retryRejectedS: 0.6,
+  retryRejectedFirstS: 0.3,
+  retryRejectedMaxS: 0.6,
   afterCommandS: 0.25,
-  afterResetS: 0.25,
+  confirmS: 1.5,
+  confirmEveryS: 0.3,
+  resetVerifyS: 0.3,
   requestS: 0.8,
 });
 

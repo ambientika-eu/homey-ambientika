@@ -9,7 +9,7 @@
     "login": "Indirizzo e-mail o password non accettati. Usa le credenziali dell'app Ambientika.",
     "connect": "Il cloud Ambientika non è raggiungibile: __message__",
     "otherAccount": "Questa unità appartiene a un altro account Ambientika. Accedi con le credenziali con cui l'unità è stata aggiunta.",
-    "slaveFilter": "Uno Slave ha un proprio contatore del filtro; azzeralo direttamente sull'unità."
+    "slaveFilter": "Questa unità è uno Slave: il suo contatore del filtro non può essere azzerato da remoto. Azzera il filtro sul Master della zona; il contatore di uno Slave si cancella solo con il ripristino dell'unità alle impostazioni di fabbrica."
   },
   "mode": {
     "smart": "Smart",

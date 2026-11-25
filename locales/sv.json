@@ -9,7 +9,7 @@
     "login": "E-postadress eller lösenord godtogs inte. Använd inloggningen till Ambientika-appen.",
     "connect": "Ambientika-molnet kan inte nås: __message__",
     "otherAccount": "Detta aggregat hör till ett annat Ambientika-konto. Logga in med inloggningen som aggregatet lades till med.",
-    "slaveFilter": "En Slave har en egen filterräknare; nollställ den direkt på aggregatet."
+    "slaveFilter": "Detta aggregat är en Slave: dess filterräknare kan inte nollställas på distans. Nollställ filtret på zonens Master; en Slaves räknare raderas bara genom att aggregatet återställs till fabriksinställningar."
   },
   "mode": {
     "smart": "Smart",
