@@ -1,0 +1,3 @@
+Ambientika-ventilationsaggregat ger frisk luft i varje rum och håller värmen inne: en keramisk värmeväxlare återvinner upp till 93 % av värmen i frånluften. Logga in med e-postadress och lösenord till Ambientika-appen, så visas SMART- och OFFICE-aggregaten i ditt konto med de namn du har gett dem där.
+
+Slå på och av aggregat, välj läge, fläktsteg, fuktnivå och skymningssensor, och se temperatur, luftfuktighet, luftkvalitet och filterstatus. Använd allt i flöden, till exempel läget Borta när alla har gått, eller ett meddelande när filtren behöver rengöras. Ett aggregat som körs som Slave följer Mastern i sin zon. Appen använder Ambientika-molnet precis som Ambientika-appen och kommer från Südwind, tillverkaren av Ambientika.

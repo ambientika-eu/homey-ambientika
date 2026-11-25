@@ -1,0 +1,173 @@
+{
+  "name": {
+    "en": "Ventilation unit (SMART, OFFICE)",
+    "de": "Lüftungsgerät (SMART, OFFICE)",
+    "nl": "Ventilatie-unit (SMART, OFFICE)",
+    "it": "Unità di ventilazione (SMART, OFFICE)",
+    "fr": "Unité de ventilation (SMART, OFFICE)",
+    "es": "Unidad de ventilación (SMART, OFFICE)",
+    "da": "Ventilationsenhed (SMART, OFFICE)",
+    "sv": "Ventilationsaggregat (SMART, OFFICE)",
+    "pl": "Rekuperator (SMART, OFFICE)"
+  },
+  "class": "fan",
+  "capabilities": [
+    "onoff",
+    "ambientika_operating_mode",
+    "ambientika_fan_speed",
+    "ambientika_humidity_level",
+    "ambientika_light_sensor",
+    "measure_temperature",
+    "measure_humidity",
+    "ambientika_air_quality",
+    "alarm_moisture",
+    "ambientika_filter_status",
+    "ambientika_night",
+    "button.reset_filter"
+  ],
+  "capabilitiesOptions": {
+    "alarm_moisture": {
+      "title": {
+        "en": "Humidity Alarm",
+        "de": "Luftfeuchte Alarm",
+        "nl": "Vochtalarm",
+        "it": "Allarme umidità",
+        "fr": "Alarme d'humidité",
+        "es": "Alarma de humedad",
+        "da": "Fugtalarm",
+        "sv": "Fuktlarm",
+        "pl": "Alarm wilgotności"
+      }
+    },
+    "button.reset_filter": {
+      "title": {
+        "en": "Filter Reset",
+        "de": "Filter zurücksetzen",
+        "nl": "Filter resetten",
+        "it": "Reset filtro",
+        "fr": "Réinitialiser le filtre",
+        "es": "Restablecer filtro",
+        "da": "Nulstil filter",
+        "sv": "Återställ filter",
+        "pl": "Reset filtra"
+      },
+      "maintenanceAction": true
+    }
+  },
+  "platforms": [
+    "local"
+  ],
+  "connectivity": [
+    "cloud"
+  ],
+  "images": {
+    "small": "{{driverAssetsPath}}/images/small.png",
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "xlarge": "{{driverAssetsPath}}/images/xlarge.png"
+  },
+  "pair": [
+    {
+      "id": "login_credentials",
+      "template": "login_credentials",
+      "options": {
+        "title": {
+          "en": "Sign in with the login of the Ambientika app",
+          "de": "Mit den Zugangsdaten der Ambientika App anmelden",
+          "nl": "Aanmelden met de gegevens van de Ambientika-app",
+          "it": "Accedi con le credenziali dell'app Ambientika",
+          "fr": "Connectez-vous avec les identifiants de l'app Ambientika",
+          "es": "Inicie sesión con los datos de la app Ambientika",
+          "da": "Log ind med login til Ambientika-appen",
+          "sv": "Logga in med inloggningen till Ambientika-appen",
+          "pl": "Zaloguj się danymi z aplikacji Ambientika"
+        },
+        "usernameLabel": {
+          "en": "E-mail address",
+          "de": "E-Mail-Adresse",
+          "nl": "E-mailadres",
+          "it": "Indirizzo e-mail",
+          "fr": "Adresse e-mail",
+          "es": "Correo electrónico",
+          "da": "E-mailadresse",
+          "sv": "E-postadress",
+          "pl": "Adres e-mail"
+        },
+        "usernamePlaceholder": {
+          "en": "name@example.com"
+        },
+        "passwordLabel": {
+          "en": "Password",
+          "de": "Passwort",
+          "nl": "Wachtwoord",
+          "it": "Password",
+          "fr": "Mot de passe",
+          "es": "Contraseña",
+          "da": "Adgangskode",
+          "sv": "Lösenord",
+          "pl": "Hasło"
+        },
+        "passwordPlaceholder": {
+          "en": "••••••••"
+        }
+      }
+    },
+    {
+      "id": "list_devices",
+      "template": "list_devices",
+      "navigation": {
+        "next": "add_devices"
+      }
+    },
+    {
+      "id": "add_devices",
+      "template": "add_devices"
+    }
+  ],
+  "repair": [
+    {
+      "id": "login_credentials",
+      "template": "login_credentials",
+      "options": {
+        "title": {
+          "en": "Sign in with the login of the Ambientika app",
+          "de": "Mit den Zugangsdaten der Ambientika App anmelden",
+          "nl": "Aanmelden met de gegevens van de Ambientika-app",
+          "it": "Accedi con le credenziali dell'app Ambientika",
+          "fr": "Connectez-vous avec les identifiants de l'app Ambientika",
+          "es": "Inicie sesión con los datos de la app Ambientika",
+          "da": "Log ind med login til Ambientika-appen",
+          "sv": "Logga in med inloggningen till Ambientika-appen",
+          "pl": "Zaloguj się danymi z aplikacji Ambientika"
+        },
+        "usernameLabel": {
+          "en": "E-mail address",
+          "de": "E-Mail-Adresse",
+          "nl": "E-mailadres",
+          "it": "Indirizzo e-mail",
+          "fr": "Adresse e-mail",
+          "es": "Correo electrónico",
+          "da": "E-mailadresse",
+          "sv": "E-postadress",
+          "pl": "Adres e-mail"
+        },
+        "usernamePlaceholder": {
+          "en": "name@example.com"
+        },
+        "passwordLabel": {
+          "en": "Password",
+          "de": "Passwort",
+          "nl": "Wachtwoord",
+          "it": "Password",
+          "fr": "Mot de passe",
+          "es": "Contraseña",
+          "da": "Adgangskode",
+          "sv": "Lösenord",
+          "pl": "Hasło"
+        },
+        "passwordPlaceholder": {
+          "en": "••••••••"
+        }
+      }
+    }
+  ]
+}

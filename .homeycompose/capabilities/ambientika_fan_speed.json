@@ -1,0 +1,62 @@
+{
+  "type": "enum",
+  "title": {
+    "en": "Fan Speed",
+    "de": "Lüfterstufe",
+    "nl": "Ventilatorsnelheid",
+    "it": "Velocità ventola",
+    "fr": "Vitesse du ventilateur",
+    "es": "Velocidad del ventilador",
+    "da": "Ventilatorhastighed",
+    "sv": "Fläkthastighet",
+    "pl": "Prędkość wentylatora"
+  },
+  "getable": true,
+  "setable": true,
+  "uiComponent": "picker",
+  "insights": false,
+  "values": [
+    {
+      "id": "low",
+      "title": {
+        "en": "Low",
+        "de": "Niedrig",
+        "nl": "Laag",
+        "it": "Bassa",
+        "fr": "Basse",
+        "es": "Baja",
+        "da": "Lav",
+        "sv": "Låg",
+        "pl": "Niska"
+      }
+    },
+    {
+      "id": "medium",
+      "title": {
+        "en": "Medium",
+        "de": "Mittel",
+        "nl": "Middel",
+        "it": "Media",
+        "fr": "Moyenne",
+        "es": "Media",
+        "da": "Mellem",
+        "sv": "Medel",
+        "pl": "Średnia"
+      }
+    },
+    {
+      "id": "high",
+      "title": {
+        "en": "High",
+        "de": "Hoch",
+        "nl": "Hoog",
+        "it": "Alta",
+        "fr": "Haute",
+        "es": "Alta",
+        "da": "Høj",
+        "sv": "Hög",
+        "pl": "Wysoka"
+      }
+    }
+  ]
+}

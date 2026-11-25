@@ -1,0 +1,123 @@
+{
+  "id": "eu.ambientika",
+  "version": "1.0.0",
+  "compatibility": ">=12.2.0",
+  "sdk": 3,
+  "platforms": [
+    "local"
+  ],
+  "name": {
+    "en": "Ambientika",
+    "de": "Ambientika",
+    "nl": "Ambientika",
+    "it": "Ambientika",
+    "fr": "Ambientika",
+    "es": "Ambientika",
+    "da": "Ambientika",
+    "sv": "Ambientika",
+    "pl": "Ambientika"
+  },
+  "description": {
+    "en": "Fresh air with heat recovery, automated room by room",
+    "de": "Frische Luft mit Wärmerückgewinnung, Raum für Raum automatisiert",
+    "nl": "Frisse lucht met warmteterugwinning, per ruimte geautomatiseerd",
+    "it": "Aria fresca con recupero di calore, automatizzata stanza per stanza",
+    "fr": "Air frais avec récupération de chaleur, automatisé pièce par pièce",
+    "es": "Aire fresco con recuperación de calor, automatizado habitación por habitación",
+    "da": "Frisk luft med varmegenvinding, automatiseret rum for rum",
+    "sv": "Frisk luft med värmeåtervinning, automatiserad rum för rum",
+    "pl": "Świeże powietrze z odzyskiem ciepła, zautomatyzowane w każdym pomieszczeniu"
+  },
+  "category": [
+    "climate"
+  ],
+  "tags": {
+    "en": [
+      "ventilation",
+      "heat recovery",
+      "air quality",
+      "humidity",
+      "Südwind",
+      "SMART",
+      "OFFICE"
+    ],
+    "de": [
+      "Lüftung",
+      "Wohnraumlüftung",
+      "Wärmerückgewinnung",
+      "Luftqualität",
+      "Luftfeuchtigkeit",
+      "Südwind"
+    ],
+    "nl": [
+      "ventilatie",
+      "warmteterugwinning",
+      "luchtkwaliteit",
+      "vochtigheid",
+      "WTW",
+      "Südwind"
+    ],
+    "it": [
+      "ventilazione",
+      "VMC",
+      "recupero di calore",
+      "qualità dell'aria",
+      "umidità",
+      "Südwind"
+    ],
+    "fr": [
+      "ventilation",
+      "VMC",
+      "récupération de chaleur",
+      "qualité de l'air",
+      "humidité",
+      "Südwind"
+    ],
+    "es": [
+      "ventilación",
+      "recuperación de calor",
+      "calidad del aire",
+      "humedad",
+      "Südwind"
+    ],
+    "da": [
+      "ventilation",
+      "varmegenvinding",
+      "luftkvalitet",
+      "fugt",
+      "Südwind"
+    ],
+    "sv": [
+      "ventilation",
+      "värmeåtervinning",
+      "luftkvalitet",
+      "fukt",
+      "Südwind"
+    ],
+    "pl": [
+      "wentylacja",
+      "rekuperacja",
+      "odzysk ciepła",
+      "jakość powietrza",
+      "wilgotność",
+      "Südwind"
+    ]
+  },
+  "brandColor": "#2C5D8F",
+  "permissions": [],
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  },
+  "author": {
+    "name": "Südwind GmbH",
+    "email": "info@ambientika.eu"
+  },
+  "homepage": "https://www.ambientika.eu",
+  "support": "mailto:info@ambientika.eu",
+  "source": "https://github.com/ambientika-eu/homey-ambientika",
+  "bugs": {
+    "url": "https://github.com/ambientika-eu/homey-ambientika/issues"
+  }
+}

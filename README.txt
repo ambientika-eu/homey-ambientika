@@ -1,0 +1,3 @@
+Ambientika ventilation units bring fresh air into every room and keep the heat inside: a ceramic heat exchanger recovers up to 93 % of the warmth of the outgoing air. Sign in with the e-mail address and password of the Ambientika app, and the SMART and OFFICE units of your account appear with the names you gave them there.
+
+Switch units on and off, choose the operating mode, fan speed, humidity level and light sensor, and see temperature, humidity, air quality and filter status. Use them in flows, for example Away mode when everybody leaves, or a message when the filters need cleaning. A unit that runs as a Slave follows the Master of its zone. The app uses the Ambientika cloud, like the Ambientika app, and is made by Südwind, the manufacturer of Ambientika.

@@ -1,0 +1,41 @@
+{
+  "type": "boolean",
+  "title": {
+    "en": "Night (light sensor)",
+    "de": "Nacht (Dämmerungssensor)",
+    "nl": "Nacht (schemersensor)",
+    "it": "Notte (sensore crepuscolare)",
+    "fr": "Nuit (capteur crépusculaire)",
+    "es": "Noche (sensor crepuscular)",
+    "da": "Nat (skumringssensor)",
+    "sv": "Natt (skymningssensor)",
+    "pl": "Noc (czujnik zmierzchu)"
+  },
+  "getable": true,
+  "setable": false,
+  "uiComponent": "sensor",
+  "icon": "/assets/capabilities/night.svg",
+  "insights": true,
+  "insightsTitleTrue": {
+    "en": "The light sensor detected night",
+    "de": "Der Dämmerungssensor hat Nacht erkannt",
+    "nl": "De schemersensor heeft nacht gedetecteerd",
+    "it": "Il sensore crepuscolare ha rilevato la notte",
+    "fr": "Le capteur crépusculaire a détecté la nuit",
+    "es": "El sensor crepuscular ha detectado la noche",
+    "da": "Skumringssensoren har registreret nat",
+    "sv": "Skymningssensorn har upptäckt natt",
+    "pl": "Czujnik zmierzchu wykrył noc"
+  },
+  "insightsTitleFalse": {
+    "en": "The light sensor detected day",
+    "de": "Der Dämmerungssensor hat Tag erkannt",
+    "nl": "De schemersensor heeft dag gedetecteerd",
+    "it": "Il sensore crepuscolare ha rilevato il giorno",
+    "fr": "Le capteur crépusculaire a détecté le jour",
+    "es": "El sensor crepuscular ha detectado el día",
+    "da": "Skumringssensoren har registreret dag",
+    "sv": "Skymningssensorn har upptäckt dag",
+    "pl": "Czujnik zmierzchu wykrył dzień"
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "type": "enum",
+  "title": {
+    "en": "Mode",
+    "de": "Modus",
+    "nl": "Modus",
+    "it": "Modalità",
+    "fr": "Mode",
+    "es": "Modo",
+    "da": "Tilstand",
+    "sv": "Läge",
+    "pl": "Tryb"
+  },
+  "getable": true,
+  "setable": true,
+  "uiComponent": "picker",
+  "insights": false,
+  "values": [
+    {
+      "id": "smart",
+      "title": {
+        "en": "Smart",
+        "de": "Smart",
+        "nl": "Smart",
+        "it": "Smart",
+        "fr": "Smart",
+        "es": "Smart",
+        "da": "Smart",
+        "sv": "Smart",
+        "pl": "Smart"
+      }
+    },
+    {
+      "id": "auto",
+      "title": {
+        "en": "Auto",
+        "de": "Auto",
+        "nl": "Auto",
+        "it": "Auto",
+        "fr": "Auto",
+        "es": "Auto",
+        "da": "Auto",
+        "sv": "Auto",
+        "pl": "Auto"
+      }
+    },
+    {
+      "id": "manual_heat_recovery",
+      "title": {
+        "en": "Manual heat recovery",
+        "de": "Manuell mit Wärmerückgewinnung",
+        "nl": "Handmatig met warmteterugwinning",
+        "it": "Manuale con recupero di calore",
+        "fr": "Manuel avec récupération de chaleur",
+        "es": "Manual con recuperación de calor",
+        "da": "Manuel med varmegenvinding",
+        "sv": "Manuell med värmeåtervinning",
+        "pl": "Ręczny z odzyskiem ciepła"
+      }
+    },
+    {
+      "id": "night",
+      "title": {
+        "en": "Night",
+        "de": "Nacht",
+        "nl": "Nacht",
+        "it": "Notte",
+        "fr": "Nuit",
+        "es": "Noche",
+        "da": "Nat",
+        "sv": "Natt",
+        "pl": "Noc"
+      }
+    },
+    {
+      "id": "away_home",
+      "title": {
+        "en": "Away",
+        "de": "Abwesend",
+        "nl": "Afwezig",
+        "it": "Assente",
+        "fr": "Absent",
+        "es": "Ausente",
+        "da": "Ude",
+        "sv": "Borta",
+        "pl": "Poza domem"
+      }
+    },
+    {
+      "id": "surveillance",
+      "title": {
+        "en": "Surveillance",
+        "de": "Überwachung",
+        "nl": "Bewaking",
+        "it": "Sorveglianza",
+        "fr": "Surveillance",
+        "es": "Vigilancia",
+        "da": "Overvågning",
+        "sv": "Övervakning",
+        "pl": "Nadzór"
+      }
+    },
+    {
+      "id": "timed_expulsion",
+      "title": {
+        "en": "Timed extraction",
+        "de": "Zeitgesteuerte Abluft",
+        "nl": "Getimede afvoer",
+        "it": "Estrazione temporizzata",
+        "fr": "Extraction temporisée",
+        "es": "Extracción temporizada",
+        "da": "Tidsstyret udsugning",
+        "sv": "Tidsstyrd frånluft",
+        "pl": "Wywiew czasowy"
+      }
+    },
+    {
+      "id": "expulsion",
+      "title": {
+        "en": "Extraction",
+        "de": "Abluft",
+        "nl": "Afvoer",
+        "it": "Estrazione",
+        "fr": "Extraction",
+        "es": "Extracción",
+        "da": "Udsugning",
+        "sv": "Frånluft",
+        "pl": "Wywiew"
+      }
+    },
+    {
+      "id": "intake",
+      "title": {
+        "en": "Intake",
+        "de": "Zuluft",
+        "nl": "Toevoer",
+        "it": "Immissione",
+        "fr": "Insufflation",
+        "es": "Impulsión",
+        "da": "Indblæsning",
+        "sv": "Tilluft",
+        "pl": "Nawiew"
+      }
+    },
+    {
+      "id": "master_slave_flow",
+      "title": {
+        "en": "Flow Master to Slave",
+        "de": "Durchfluss Master zu Slave",
+        "nl": "Stroming van Master naar Slave",
+        "it": "Flusso da Master a Slave",
+        "fr": "Flux du Master vers le Slave",
+        "es": "Flujo de Master a Slave",
+        "da": "Strømning fra Master til Slave",
+        "sv": "Flöde från Master till Slave",
+        "pl": "Przepływ od Master do Slave"
+      }
+    },
+    {
+      "id": "slave_master_flow",
+      "title": {
+        "en": "Flow Slave to Master",
+        "de": "Durchfluss Slave zu Master",
+        "nl": "Stroming van Slave naar Master",
+        "it": "Flusso da Slave a Master",
+        "fr": "Flux du Slave vers le Master",
+        "es": "Flujo de Slave a Master",
+        "da": "Strømning fra Slave til Master",
+        "sv": "Flöde från Slave till Master",
+        "pl": "Przepływ od Slave do Master"
+      }
+    },
+    {
+      "id": "off",
+      "title": {
+        "en": "Off",
+        "de": "Aus",
+        "nl": "Uit",
+        "it": "Spento",
+        "fr": "Arrêt",
+        "es": "Apagado",
+        "da": "Slukket",
+        "sv": "Av",
+        "pl": "Wyłączony"
+      }
+    }
+  ]
+}

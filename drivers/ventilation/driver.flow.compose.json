@@ -1,0 +1,1101 @@
+{
+  "triggers": [
+    {
+      "id": "operating_mode_changed",
+      "title": {
+        "en": "The operating mode changed",
+        "de": "Der Modus hat sich geändert",
+        "nl": "De modus is gewijzigd",
+        "it": "La modalità è cambiata",
+        "fr": "Le mode a changé",
+        "es": "El modo ha cambiado",
+        "da": "Tilstanden er ændret",
+        "sv": "Läget har ändrats",
+        "pl": "Tryb się zmienił"
+      },
+      "tokens": [
+        {
+          "name": "mode",
+          "type": "string",
+          "title": {
+            "en": "Operating mode",
+            "de": "Modus",
+            "nl": "Modus",
+            "it": "Modalità",
+            "fr": "Mode",
+            "es": "Modo",
+            "da": "Tilstand",
+            "sv": "Läge",
+            "pl": "Tryb"
+          },
+          "example": {
+            "en": "Smart"
+          }
+        },
+        {
+          "name": "mode_id",
+          "type": "string",
+          "title": {
+            "en": "Operating mode (id)",
+            "de": "Modus (id)",
+            "nl": "Modus (id)",
+            "it": "Modalità (id)",
+            "fr": "Mode (id)",
+            "es": "Modo (id)",
+            "da": "Tilstand (id)",
+            "sv": "Läge (id)",
+            "pl": "Tryb (id)"
+          },
+          "example": {
+            "en": "smart"
+          }
+        }
+      ]
+    },
+    {
+      "id": "air_quality_changed",
+      "title": {
+        "en": "The air quality changed",
+        "de": "Die Luftqualität hat sich geändert",
+        "nl": "De luchtkwaliteit is gewijzigd",
+        "it": "La qualità dell'aria è cambiata",
+        "fr": "La qualité de l'air a changé",
+        "es": "La calidad del aire ha cambiado",
+        "da": "Luftkvaliteten er ændret",
+        "sv": "Luftkvaliteten har ändrats",
+        "pl": "Jakość powietrza się zmieniła"
+      },
+      "tokens": [
+        {
+          "name": "air_quality",
+          "type": "string",
+          "title": {
+            "en": "Air Quality",
+            "de": "Luftqualität",
+            "nl": "Luchtkwaliteit",
+            "it": "Qualità dell'aria",
+            "fr": "Qualité de l'air",
+            "es": "Calidad del aire",
+            "da": "Luftkvalitet",
+            "sv": "Luftkvalitet",
+            "pl": "Jakość powietrza"
+          },
+          "example": {
+            "en": "Good",
+            "de": "gut",
+            "nl": "Goed",
+            "it": "Buona",
+            "fr": "Bonne",
+            "es": "Buena",
+            "da": "God",
+            "sv": "Bra",
+            "pl": "Dobra"
+          }
+        }
+      ]
+    },
+    {
+      "id": "filter_status_changed",
+      "title": {
+        "en": "The filter status changed",
+        "de": "Der Filterstatus hat sich geändert",
+        "nl": "De filterstatus is gewijzigd",
+        "it": "Lo stato del filtro è cambiato",
+        "fr": "L'état du filtre a changé",
+        "es": "El estado del filtro ha cambiado",
+        "da": "Filterstatus er ændret",
+        "sv": "Filterstatus har ändrats",
+        "pl": "Stan filtra się zmienił"
+      },
+      "tokens": [
+        {
+          "name": "filter_status",
+          "type": "string",
+          "title": {
+            "en": "Filter Status",
+            "de": "Filter Status",
+            "nl": "Filterstatus",
+            "it": "Stato filtro",
+            "fr": "État du filtre",
+            "es": "Estado del filtro",
+            "da": "Filterstatus",
+            "sv": "Filterstatus",
+            "pl": "Stan filtra"
+          },
+          "example": {
+            "en": "Bad",
+            "de": "schlecht",
+            "nl": "Slecht",
+            "it": "Scarso",
+            "fr": "Mauvais",
+            "es": "Malo",
+            "da": "Dårlig",
+            "sv": "Dålig",
+            "pl": "Zły"
+          }
+        }
+      ]
+    },
+    {
+      "id": "night_started",
+      "title": {
+        "en": "The light sensor detected night",
+        "de": "Der Dämmerungssensor hat Nacht erkannt",
+        "nl": "De schemersensor heeft nacht gedetecteerd",
+        "it": "Il sensore crepuscolare ha rilevato la notte",
+        "fr": "Le capteur crépusculaire a détecté la nuit",
+        "es": "El sensor crepuscular ha detectado la noche",
+        "da": "Skumringssensoren har registreret nat",
+        "sv": "Skymningssensorn har upptäckt natt",
+        "pl": "Czujnik zmierzchu wykrył noc"
+      }
+    },
+    {
+      "id": "night_ended",
+      "title": {
+        "en": "The light sensor detected day",
+        "de": "Der Dämmerungssensor hat Tag erkannt",
+        "nl": "De schemersensor heeft dag gedetecteerd",
+        "it": "Il sensore crepuscolare ha rilevato il giorno",
+        "fr": "Le capteur crépusculaire a détecté le jour",
+        "es": "El sensor crepuscular ha detectado el día",
+        "da": "Skumringssensoren har registreret dag",
+        "sv": "Skymningssensorn har upptäckt dag",
+        "pl": "Czujnik zmierzchu wykrył dzień"
+      }
+    }
+  ],
+  "conditions": [
+    {
+      "id": "operating_mode_is",
+      "title": {
+        "en": "The operating mode is …",
+        "de": "Der Modus ist …",
+        "nl": "De modus is …",
+        "it": "La modalità è …",
+        "fr": "Le mode est …",
+        "es": "El modo es …",
+        "da": "Tilstanden er …",
+        "sv": "Läget är …",
+        "pl": "Tryb to …"
+      },
+      "titleFormatted": {
+        "en": "The operating mode !{{is|is not}} [[mode]]",
+        "de": "Der Modus !{{ist|ist nicht}} [[mode]]",
+        "nl": "De modus !{{is|is niet}} [[mode]]",
+        "it": "La modalità !{{è|non è}} [[mode]]",
+        "fr": "Le mode !{{est|n’est pas}} [[mode]]",
+        "es": "El modo !{{es|no es}} [[mode]]",
+        "da": "Tilstanden !{{er|er ikke}} [[mode]]",
+        "sv": "Läget !{{är|är inte}} [[mode]]",
+        "pl": "Tryb !{{to|to nie}} [[mode]]"
+      },
+      "args": [
+        {
+          "name": "mode",
+          "type": "dropdown",
+          "title": {
+            "en": "Operating mode",
+            "de": "Modus",
+            "nl": "Modus",
+            "it": "Modalità",
+            "fr": "Mode",
+            "es": "Modo",
+            "da": "Tilstand",
+            "sv": "Läge",
+            "pl": "Tryb"
+          },
+          "values": [
+            {
+              "id": "smart",
+              "title": {
+                "en": "Smart",
+                "de": "Smart",
+                "nl": "Smart",
+                "it": "Smart",
+                "fr": "Smart",
+                "es": "Smart",
+                "da": "Smart",
+                "sv": "Smart",
+                "pl": "Smart"
+              }
+            },
+            {
+              "id": "auto",
+              "title": {
+                "en": "Auto",
+                "de": "Auto",
+                "nl": "Auto",
+                "it": "Auto",
+                "fr": "Auto",
+                "es": "Auto",
+                "da": "Auto",
+                "sv": "Auto",
+                "pl": "Auto"
+              }
+            },
+            {
+              "id": "manual_heat_recovery",
+              "title": {
+                "en": "Manual heat recovery",
+                "de": "Manuell mit Wärmerückgewinnung",
+                "nl": "Handmatig met warmteterugwinning",
+                "it": "Manuale con recupero di calore",
+                "fr": "Manuel avec récupération de chaleur",
+                "es": "Manual con recuperación de calor",
+                "da": "Manuel med varmegenvinding",
+                "sv": "Manuell med värmeåtervinning",
+                "pl": "Ręczny z odzyskiem ciepła"
+              }
+            },
+            {
+              "id": "night",
+              "title": {
+                "en": "Night",
+                "de": "Nacht",
+                "nl": "Nacht",
+                "it": "Notte",
+                "fr": "Nuit",
+                "es": "Noche",
+                "da": "Nat",
+                "sv": "Natt",
+                "pl": "Noc"
+              }
+            },
+            {
+              "id": "away_home",
+              "title": {
+                "en": "Away",
+                "de": "Abwesend",
+                "nl": "Afwezig",
+                "it": "Assente",
+                "fr": "Absent",
+                "es": "Ausente",
+                "da": "Ude",
+                "sv": "Borta",
+                "pl": "Poza domem"
+              }
+            },
+            {
+              "id": "surveillance",
+              "title": {
+                "en": "Surveillance",
+                "de": "Überwachung",
+                "nl": "Bewaking",
+                "it": "Sorveglianza",
+                "fr": "Surveillance",
+                "es": "Vigilancia",
+                "da": "Overvågning",
+                "sv": "Övervakning",
+                "pl": "Nadzór"
+              }
+            },
+            {
+              "id": "timed_expulsion",
+              "title": {
+                "en": "Timed extraction",
+                "de": "Zeitgesteuerte Abluft",
+                "nl": "Getimede afvoer",
+                "it": "Estrazione temporizzata",
+                "fr": "Extraction temporisée",
+                "es": "Extracción temporizada",
+                "da": "Tidsstyret udsugning",
+                "sv": "Tidsstyrd frånluft",
+                "pl": "Wywiew czasowy"
+              }
+            },
+            {
+              "id": "expulsion",
+              "title": {
+                "en": "Extraction",
+                "de": "Abluft",
+                "nl": "Afvoer",
+                "it": "Estrazione",
+                "fr": "Extraction",
+                "es": "Extracción",
+                "da": "Udsugning",
+                "sv": "Frånluft",
+                "pl": "Wywiew"
+              }
+            },
+            {
+              "id": "intake",
+              "title": {
+                "en": "Intake",
+                "de": "Zuluft",
+                "nl": "Toevoer",
+                "it": "Immissione",
+                "fr": "Insufflation",
+                "es": "Impulsión",
+                "da": "Indblæsning",
+                "sv": "Tilluft",
+                "pl": "Nawiew"
+              }
+            },
+            {
+              "id": "master_slave_flow",
+              "title": {
+                "en": "Flow Master to Slave",
+                "de": "Durchfluss Master zu Slave",
+                "nl": "Stroming van Master naar Slave",
+                "it": "Flusso da Master a Slave",
+                "fr": "Flux du Master vers le Slave",
+                "es": "Flujo de Master a Slave",
+                "da": "Strømning fra Master til Slave",
+                "sv": "Flöde från Master till Slave",
+                "pl": "Przepływ od Master do Slave"
+              }
+            },
+            {
+              "id": "slave_master_flow",
+              "title": {
+                "en": "Flow Slave to Master",
+                "de": "Durchfluss Slave zu Master",
+                "nl": "Stroming van Slave naar Master",
+                "it": "Flusso da Slave a Master",
+                "fr": "Flux du Slave vers le Master",
+                "es": "Flujo de Slave a Master",
+                "da": "Strømning fra Slave til Master",
+                "sv": "Flöde från Slave till Master",
+                "pl": "Przepływ od Slave do Master"
+              }
+            },
+            {
+              "id": "off",
+              "title": {
+                "en": "Off",
+                "de": "Aus",
+                "nl": "Uit",
+                "it": "Spento",
+                "fr": "Arrêt",
+                "es": "Apagado",
+                "da": "Slukket",
+                "sv": "Av",
+                "pl": "Wyłączony"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "air_quality_worse_than",
+      "title": {
+        "en": "The air quality is worse than …",
+        "de": "Die Luftqualität ist schlechter als …",
+        "nl": "De luchtkwaliteit is slechter dan …",
+        "it": "La qualità dell'aria è peggiore di …",
+        "fr": "La qualité de l'air est moins bonne que …",
+        "es": "La calidad del aire es peor que …",
+        "da": "Luftkvaliteten er dårligere end …",
+        "sv": "Luftkvaliteten är sämre än …",
+        "pl": "Jakość powietrza jest gorsza niż …"
+      },
+      "titleFormatted": {
+        "en": "The air quality !{{is|is not}} worse than [[air_quality]]",
+        "de": "Die Luftqualität !{{ist|ist nicht}} schlechter als [[air_quality]]",
+        "nl": "De luchtkwaliteit !{{is|is niet}} slechter dan [[air_quality]]",
+        "it": "La qualità dell'aria !{{è|non è}} peggiore di [[air_quality]]",
+        "fr": "La qualité de l'air !{{est|n’est pas}} moins bonne que [[air_quality]]",
+        "es": "La calidad del aire !{{es|no es}} peor que [[air_quality]]",
+        "da": "Luftkvaliteten !{{er|er ikke}} dårligere end [[air_quality]]",
+        "sv": "Luftkvaliteten !{{är|är inte}} sämre än [[air_quality]]",
+        "pl": "Jakość powietrza !{{jest|nie jest}} gorsza niż [[air_quality]]"
+      },
+      "args": [
+        {
+          "name": "air_quality",
+          "type": "dropdown",
+          "title": {
+            "en": "Air Quality",
+            "de": "Luftqualität",
+            "nl": "Luchtkwaliteit",
+            "it": "Qualità dell'aria",
+            "fr": "Qualité de l'air",
+            "es": "Calidad del aire",
+            "da": "Luftkvalitet",
+            "sv": "Luftkvalitet",
+            "pl": "Jakość powietrza"
+          },
+          "values": [
+            {
+              "id": "very_good",
+              "title": {
+                "en": "Very Good",
+                "de": "sehr gut",
+                "nl": "Zeer goed",
+                "it": "Ottima",
+                "fr": "Très bonne",
+                "es": "Muy buena",
+                "da": "Meget god",
+                "sv": "Mycket bra",
+                "pl": "Bardzo dobra"
+              }
+            },
+            {
+              "id": "good",
+              "title": {
+                "en": "Good",
+                "de": "gut",
+                "nl": "Goed",
+                "it": "Buona",
+                "fr": "Bonne",
+                "es": "Buena",
+                "da": "God",
+                "sv": "Bra",
+                "pl": "Dobra"
+              }
+            },
+            {
+              "id": "medium",
+              "title": {
+                "en": "Medium",
+                "de": "mittel",
+                "nl": "Matig",
+                "it": "Media",
+                "fr": "Moyenne",
+                "es": "Media",
+                "da": "Middel",
+                "sv": "Medel",
+                "pl": "Średnia"
+              }
+            },
+            {
+              "id": "poor",
+              "title": {
+                "en": "Poor",
+                "de": "schlecht",
+                "nl": "Slecht",
+                "it": "Scarsa",
+                "fr": "Médiocre",
+                "es": "Mala",
+                "da": "Dårlig",
+                "sv": "Dålig",
+                "pl": "Słaba"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "filter_status_is",
+      "title": {
+        "en": "The filter status is …",
+        "de": "Der Filterstatus ist …",
+        "nl": "De filterstatus is …",
+        "it": "Lo stato del filtro è …",
+        "fr": "L'état du filtre est …",
+        "es": "El estado del filtro es …",
+        "da": "Filterstatus er …",
+        "sv": "Filterstatus är …",
+        "pl": "Stan filtra to …"
+      },
+      "titleFormatted": {
+        "en": "The filter status !{{is|is not}} [[filter_status]]",
+        "de": "Der Filterstatus !{{ist|ist nicht}} [[filter_status]]",
+        "nl": "De filterstatus !{{is|is niet}} [[filter_status]]",
+        "it": "Lo stato del filtro !{{è|non è}} [[filter_status]]",
+        "fr": "L'état du filtre !{{est|n’est pas}} [[filter_status]]",
+        "es": "El estado del filtro !{{es|no es}} [[filter_status]]",
+        "da": "Filterstatus !{{er|er ikke}} [[filter_status]]",
+        "sv": "Filterstatus !{{är|är inte}} [[filter_status]]",
+        "pl": "Stan filtra !{{to|to nie}} [[filter_status]]"
+      },
+      "args": [
+        {
+          "name": "filter_status",
+          "type": "dropdown",
+          "title": {
+            "en": "Filter Status",
+            "de": "Filter Status",
+            "nl": "Filterstatus",
+            "it": "Stato filtro",
+            "fr": "État du filtre",
+            "es": "Estado del filtro",
+            "da": "Filterstatus",
+            "sv": "Filterstatus",
+            "pl": "Stan filtra"
+          },
+          "values": [
+            {
+              "id": "good",
+              "title": {
+                "en": "Good",
+                "de": "gut",
+                "nl": "Goed",
+                "it": "Buono",
+                "fr": "Bon",
+                "es": "Bueno",
+                "da": "God",
+                "sv": "Bra",
+                "pl": "Dobry"
+              }
+            },
+            {
+              "id": "medium",
+              "title": {
+                "en": "Medium",
+                "de": "mittel",
+                "nl": "Matig",
+                "it": "Medio",
+                "fr": "Moyen",
+                "es": "Medio",
+                "da": "Middel",
+                "sv": "Medel",
+                "pl": "Średni"
+              }
+            },
+            {
+              "id": "bad",
+              "title": {
+                "en": "Bad",
+                "de": "schlecht",
+                "nl": "Slecht",
+                "it": "Scarso",
+                "fr": "Mauvais",
+                "es": "Malo",
+                "da": "Dårlig",
+                "sv": "Dålig",
+                "pl": "Zły"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "is_night",
+      "title": {
+        "en": "The light sensor detects night",
+        "de": "Der Dämmerungssensor erkennt Nacht",
+        "nl": "De schemersensor detecteert nacht",
+        "it": "Il sensore crepuscolare rileva la notte",
+        "fr": "Le capteur crépusculaire détecte la nuit",
+        "es": "El sensor crepuscular detecta la noche",
+        "da": "Skumringssensoren registrerer nat",
+        "sv": "Skymningssensorn upptäcker natt",
+        "pl": "Czujnik zmierzchu wykrywa noc"
+      },
+      "titleFormatted": {
+        "en": "The light sensor !{{detects|does not detect}} night",
+        "de": "Der Dämmerungssensor !{{erkennt|erkennt keine}} Nacht",
+        "nl": "De schemersensor !{{detecteert|detecteert geen}} nacht",
+        "it": "Il sensore crepuscolare !{{rileva|non rileva}} la notte",
+        "fr": "Le capteur crépusculaire !{{détecte|ne détecte pas}} la nuit",
+        "es": "El sensor crepuscular !{{detecta|no detecta}} la noche",
+        "da": "Skumringssensoren !{{registrerer|registrerer ikke}} nat",
+        "sv": "Skymningssensorn !{{upptäcker|upptäcker inte}} natt",
+        "pl": "Czujnik zmierzchu !{{wykrywa noc|nie wykrywa nocy}}"
+      }
+    }
+  ],
+  "actions": [
+    {
+      "id": "set_operating_mode",
+      "title": {
+        "en": "Set the operating mode",
+        "de": "Modus einstellen",
+        "nl": "Modus instellen",
+        "it": "Imposta la modalità",
+        "fr": "Régler le mode",
+        "es": "Ajustar el modo",
+        "da": "Indstil tilstand",
+        "sv": "Ställ in läge",
+        "pl": "Ustaw tryb"
+      },
+      "titleFormatted": {
+        "en": "Set the operating mode to [[mode]]",
+        "de": "Modus auf [[mode]] stellen",
+        "nl": "Modus instellen op [[mode]]",
+        "it": "Imposta la modalità su [[mode]]",
+        "fr": "Régler le mode sur [[mode]]",
+        "es": "Poner el modo en [[mode]]",
+        "da": "Sæt tilstanden til [[mode]]",
+        "sv": "Ställ in läget på [[mode]]",
+        "pl": "Ustaw tryb na [[mode]]"
+      },
+      "args": [
+        {
+          "name": "mode",
+          "type": "dropdown",
+          "title": {
+            "en": "Operating mode",
+            "de": "Modus",
+            "nl": "Modus",
+            "it": "Modalità",
+            "fr": "Mode",
+            "es": "Modo",
+            "da": "Tilstand",
+            "sv": "Läge",
+            "pl": "Tryb"
+          },
+          "values": [
+            {
+              "id": "smart",
+              "title": {
+                "en": "Smart",
+                "de": "Smart",
+                "nl": "Smart",
+                "it": "Smart",
+                "fr": "Smart",
+                "es": "Smart",
+                "da": "Smart",
+                "sv": "Smart",
+                "pl": "Smart"
+              }
+            },
+            {
+              "id": "auto",
+              "title": {
+                "en": "Auto",
+                "de": "Auto",
+                "nl": "Auto",
+                "it": "Auto",
+                "fr": "Auto",
+                "es": "Auto",
+                "da": "Auto",
+                "sv": "Auto",
+                "pl": "Auto"
+              }
+            },
+            {
+              "id": "manual_heat_recovery",
+              "title": {
+                "en": "Manual heat recovery",
+                "de": "Manuell mit Wärmerückgewinnung",
+                "nl": "Handmatig met warmteterugwinning",
+                "it": "Manuale con recupero di calore",
+                "fr": "Manuel avec récupération de chaleur",
+                "es": "Manual con recuperación de calor",
+                "da": "Manuel med varmegenvinding",
+                "sv": "Manuell med värmeåtervinning",
+                "pl": "Ręczny z odzyskiem ciepła"
+              }
+            },
+            {
+              "id": "night",
+              "title": {
+                "en": "Night",
+                "de": "Nacht",
+                "nl": "Nacht",
+                "it": "Notte",
+                "fr": "Nuit",
+                "es": "Noche",
+                "da": "Nat",
+                "sv": "Natt",
+                "pl": "Noc"
+              }
+            },
+            {
+              "id": "away_home",
+              "title": {
+                "en": "Away",
+                "de": "Abwesend",
+                "nl": "Afwezig",
+                "it": "Assente",
+                "fr": "Absent",
+                "es": "Ausente",
+                "da": "Ude",
+                "sv": "Borta",
+                "pl": "Poza domem"
+              }
+            },
+            {
+              "id": "surveillance",
+              "title": {
+                "en": "Surveillance",
+                "de": "Überwachung",
+                "nl": "Bewaking",
+                "it": "Sorveglianza",
+                "fr": "Surveillance",
+                "es": "Vigilancia",
+                "da": "Overvågning",
+                "sv": "Övervakning",
+                "pl": "Nadzór"
+              }
+            },
+            {
+              "id": "timed_expulsion",
+              "title": {
+                "en": "Timed extraction",
+                "de": "Zeitgesteuerte Abluft",
+                "nl": "Getimede afvoer",
+                "it": "Estrazione temporizzata",
+                "fr": "Extraction temporisée",
+                "es": "Extracción temporizada",
+                "da": "Tidsstyret udsugning",
+                "sv": "Tidsstyrd frånluft",
+                "pl": "Wywiew czasowy"
+              }
+            },
+            {
+              "id": "expulsion",
+              "title": {
+                "en": "Extraction",
+                "de": "Abluft",
+                "nl": "Afvoer",
+                "it": "Estrazione",
+                "fr": "Extraction",
+                "es": "Extracción",
+                "da": "Udsugning",
+                "sv": "Frånluft",
+                "pl": "Wywiew"
+              }
+            },
+            {
+              "id": "intake",
+              "title": {
+                "en": "Intake",
+                "de": "Zuluft",
+                "nl": "Toevoer",
+                "it": "Immissione",
+                "fr": "Insufflation",
+                "es": "Impulsión",
+                "da": "Indblæsning",
+                "sv": "Tilluft",
+                "pl": "Nawiew"
+              }
+            },
+            {
+              "id": "master_slave_flow",
+              "title": {
+                "en": "Flow Master to Slave",
+                "de": "Durchfluss Master zu Slave",
+                "nl": "Stroming van Master naar Slave",
+                "it": "Flusso da Master a Slave",
+                "fr": "Flux du Master vers le Slave",
+                "es": "Flujo de Master a Slave",
+                "da": "Strømning fra Master til Slave",
+                "sv": "Flöde från Master till Slave",
+                "pl": "Przepływ od Master do Slave"
+              }
+            },
+            {
+              "id": "slave_master_flow",
+              "title": {
+                "en": "Flow Slave to Master",
+                "de": "Durchfluss Slave zu Master",
+                "nl": "Stroming van Slave naar Master",
+                "it": "Flusso da Slave a Master",
+                "fr": "Flux du Slave vers le Master",
+                "es": "Flujo de Slave a Master",
+                "da": "Strømning fra Slave til Master",
+                "sv": "Flöde från Slave till Master",
+                "pl": "Przepływ od Slave do Master"
+              }
+            },
+            {
+              "id": "off",
+              "title": {
+                "en": "Off",
+                "de": "Aus",
+                "nl": "Uit",
+                "it": "Spento",
+                "fr": "Arrêt",
+                "es": "Apagado",
+                "da": "Slukket",
+                "sv": "Av",
+                "pl": "Wyłączony"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "set_fan_speed",
+      "title": {
+        "en": "Set the fan speed",
+        "de": "Lüfterstufe einstellen",
+        "nl": "Ventilatorsnelheid instellen",
+        "it": "Imposta la velocità",
+        "fr": "Régler la vitesse",
+        "es": "Ajustar la velocidad",
+        "da": "Indstil ventilatortrin",
+        "sv": "Ställ in fläktsteg",
+        "pl": "Ustaw bieg wentylatora"
+      },
+      "titleFormatted": {
+        "en": "Set the fan speed to [[fan_speed]]",
+        "de": "Lüfterstufe auf [[fan_speed]] stellen",
+        "nl": "Ventilatorsnelheid instellen op [[fan_speed]]",
+        "it": "Imposta la velocità su [[fan_speed]]",
+        "fr": "Régler la vitesse sur [[fan_speed]]",
+        "es": "Poner la velocidad en [[fan_speed]]",
+        "da": "Sæt ventilatortrinnet til [[fan_speed]]",
+        "sv": "Ställ in fläktsteget på [[fan_speed]]",
+        "pl": "Ustaw bieg wentylatora na [[fan_speed]]"
+      },
+      "hint": {
+        "en": "In the modes Smart and Auto the unit chooses the speed itself: a fixed speed switches it to manual heat recovery.",
+        "de": "In den Modi Smart und Auto wählt das Gerät die Stufe selbst: Eine feste Stufe schaltet auf manuelle Wärmerückgewinnung.",
+        "nl": "In de modi Smart en Auto kiest de unit zelf de snelheid: een vaste snelheid schakelt naar handmatig met warmteterugwinning.",
+        "it": "Nelle modalità Smart e Auto l'unità sceglie da sola la velocità: una velocità fissa passa al recupero di calore manuale.",
+        "fr": "En mode Smart et Auto, l'unité choisit elle-même la vitesse : une vitesse fixe passe en récupération de chaleur manuelle.",
+        "es": "En los modos Smart y Auto la unidad elige la velocidad: una velocidad fija cambia a recuperación de calor manual.",
+        "da": "I tilstandene Smart og Auto vælger enheden selv trinnet: et fast trin skifter til manuel varmegenvinding.",
+        "sv": "I lägena Smart och Auto väljer aggregatet själv steget: ett fast steg växlar till manuell värmeåtervinning.",
+        "pl": "W trybach Smart i Auto urządzenie samo wybiera bieg: stały bieg przełącza na ręczny odzysk ciepła."
+      },
+      "args": [
+        {
+          "name": "fan_speed",
+          "type": "dropdown",
+          "title": {
+            "en": "Fan Speed",
+            "de": "Lüfterstufe",
+            "nl": "Ventilatorsnelheid",
+            "it": "Velocità ventola",
+            "fr": "Vitesse du ventilateur",
+            "es": "Velocidad del ventilador",
+            "da": "Ventilatorhastighed",
+            "sv": "Fläkthastighet",
+            "pl": "Prędkość wentylatora"
+          },
+          "values": [
+            {
+              "id": "low",
+              "title": {
+                "en": "Low",
+                "de": "Niedrig",
+                "nl": "Laag",
+                "it": "Bassa",
+                "fr": "Basse",
+                "es": "Baja",
+                "da": "Lav",
+                "sv": "Låg",
+                "pl": "Niska"
+              }
+            },
+            {
+              "id": "medium",
+              "title": {
+                "en": "Medium",
+                "de": "Mittel",
+                "nl": "Middel",
+                "it": "Media",
+                "fr": "Moyenne",
+                "es": "Media",
+                "da": "Mellem",
+                "sv": "Medel",
+                "pl": "Średnia"
+              }
+            },
+            {
+              "id": "high",
+              "title": {
+                "en": "High",
+                "de": "Hoch",
+                "nl": "Hoog",
+                "it": "Alta",
+                "fr": "Haute",
+                "es": "Alta",
+                "da": "Høj",
+                "sv": "Hög",
+                "pl": "Wysoka"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "set_humidity_level",
+      "title": {
+        "en": "Set the humidity level",
+        "de": "Feuchtestufe einstellen",
+        "nl": "Vochtigheidsniveau instellen",
+        "it": "Imposta il livello di umidità",
+        "fr": "Régler le niveau d'humidité",
+        "es": "Ajustar el nivel de humedad",
+        "da": "Indstil fugtniveau",
+        "sv": "Ställ in fuktnivå",
+        "pl": "Ustaw poziom wilgotności"
+      },
+      "titleFormatted": {
+        "en": "Set the humidity level to [[humidity_level]]",
+        "de": "Feuchtestufe auf [[humidity_level]] stellen",
+        "nl": "Vochtigheidsniveau instellen op [[humidity_level]]",
+        "it": "Imposta il livello di umidità su [[humidity_level]]",
+        "fr": "Régler le niveau d'humidité sur [[humidity_level]]",
+        "es": "Poner el nivel de humedad en [[humidity_level]]",
+        "da": "Sæt fugtniveauet til [[humidity_level]]",
+        "sv": "Ställ in fuktnivån på [[humidity_level]]",
+        "pl": "Ustaw poziom wilgotności na [[humidity_level]]"
+      },
+      "args": [
+        {
+          "name": "humidity_level",
+          "type": "dropdown",
+          "title": {
+            "en": "Humidity Level",
+            "de": "Feuchtestufe",
+            "nl": "Vochtigheidsniveau",
+            "it": "Livello di umidità",
+            "fr": "Niveau d'humidité",
+            "es": "Nivel de humedad",
+            "da": "Fugtniveau",
+            "sv": "Fuktnivå",
+            "pl": "Poziom wilgotności"
+          },
+          "values": [
+            {
+              "id": "dry",
+              "title": {
+                "en": "Dry",
+                "de": "Trocken",
+                "nl": "Droog",
+                "it": "Secco",
+                "fr": "Sec",
+                "es": "Seco",
+                "da": "Tør",
+                "sv": "Torr",
+                "pl": "Sucho"
+              }
+            },
+            {
+              "id": "normal",
+              "title": {
+                "en": "Normal",
+                "de": "Normal",
+                "nl": "Normaal",
+                "it": "Normale",
+                "fr": "Normal",
+                "es": "Normal",
+                "da": "Normal",
+                "sv": "Normal",
+                "pl": "Normalnie"
+              }
+            },
+            {
+              "id": "moist",
+              "title": {
+                "en": "Moist",
+                "de": "Feucht",
+                "nl": "Vochtig",
+                "it": "Umido",
+                "fr": "Humide",
+                "es": "Húmedo",
+                "da": "Fugtig",
+                "sv": "Fuktig",
+                "pl": "Wilgotno"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "set_light_sensor",
+      "title": {
+        "en": "Set the light sensor sensitivity",
+        "de": "Empfindlichkeit des Dämmerungssensors einstellen",
+        "nl": "Gevoeligheid schemersensor instellen",
+        "it": "Imposta la sensibilità del sensore crepuscolare",
+        "fr": "Régler la sensibilité du capteur crépusculaire",
+        "es": "Ajustar la sensibilidad del sensor crepuscular",
+        "da": "Indstil skumringssensorens følsomhed",
+        "sv": "Ställ in skymningssensorns känslighet",
+        "pl": "Ustaw czułość czujnika zmierzchu"
+      },
+      "titleFormatted": {
+        "en": "Set the light sensor sensitivity to [[light_sensor]]",
+        "de": "Empfindlichkeit des Dämmerungssensors auf [[light_sensor]] stellen",
+        "nl": "Gevoeligheid van de schemersensor instellen op [[light_sensor]]",
+        "it": "Imposta la sensibilità del sensore crepuscolare su [[light_sensor]]",
+        "fr": "Régler la sensibilité du capteur crépusculaire sur [[light_sensor]]",
+        "es": "Poner la sensibilidad del sensor crepuscular en [[light_sensor]]",
+        "da": "Sæt skumringssensorens følsomhed til [[light_sensor]]",
+        "sv": "Ställ in skymningssensorns känslighet på [[light_sensor]]",
+        "pl": "Ustaw czułość czujnika zmierzchu na [[light_sensor]]"
+      },
+      "args": [
+        {
+          "name": "light_sensor",
+          "type": "dropdown",
+          "title": {
+            "en": "Dusk Sensor Sensitivity",
+            "de": "Empfindlichkeit Dämmerungssensor",
+            "nl": "Gevoeligheid schemersensor",
+            "it": "Sensibilità sensore crepuscolare",
+            "fr": "Sensibilité du capteur crépusculaire",
+            "es": "Sensibilidad del sensor crepuscular",
+            "da": "Følsomhed for skumringssensor",
+            "sv": "Känslighet för skymningssensor",
+            "pl": "Czułość czujnika zmierzchu"
+          },
+          "values": [
+            {
+              "id": "off",
+              "title": {
+                "en": "Off",
+                "de": "Aus",
+                "nl": "Uit",
+                "it": "Spento",
+                "fr": "Désactivé",
+                "es": "Apagado",
+                "da": "Fra",
+                "sv": "Av",
+                "pl": "Wyłączony"
+              }
+            },
+            {
+              "id": "low",
+              "title": {
+                "en": "Low",
+                "de": "Niedrig",
+                "nl": "Laag",
+                "it": "Bassa",
+                "fr": "Basse",
+                "es": "Baja",
+                "da": "Lav",
+                "sv": "Låg",
+                "pl": "Niska"
+              }
+            },
+            {
+              "id": "high",
+              "title": {
+                "en": "High",
+                "de": "Hoch",
+                "nl": "Hoog",
+                "it": "Alta",
+                "fr": "Haute",
+                "es": "Alta",
+                "da": "Høj",
+                "sv": "Hög",
+                "pl": "Wysoka"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reset_filter",
+      "title": {
+        "en": "Reset the filter counter",
+        "de": "Filterzähler zurücksetzen",
+        "nl": "Filterteller resetten",
+        "it": "Azzera il contatore del filtro",
+        "fr": "Réinitialiser le compteur du filtre",
+        "es": "Reiniciar el contador del filtro",
+        "da": "Nulstil filtertælleren",
+        "sv": "Nollställ filterräknaren",
+        "pl": "Wyzeruj licznik filtra"
+      },
+      "hint": {
+        "en": "Only after the filters have been cleaned or replaced.",
+        "de": "Erst nachdem die Filter gereinigt oder getauscht wurden.",
+        "nl": "Pas nadat de filters zijn gereinigd of vervangen.",
+        "it": "Solo dopo aver pulito o sostituito i filtri.",
+        "fr": "Uniquement après avoir nettoyé ou remplacé les filtres.",
+        "es": "Solo después de limpiar o cambiar los filtros.",
+        "da": "Først når filtrene er rengjort eller udskiftet.",
+        "sv": "Först när filtren har rengjorts eller bytts.",
+        "pl": "Dopiero po wyczyszczeniu lub wymianie filtrów."
+      }
+    }
+  ]
+}

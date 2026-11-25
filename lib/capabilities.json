@@ -1,0 +1,45 @@
+{
+  "master": [
+    "onoff",
+    "ambientika_operating_mode",
+    "ambientika_fan_speed",
+    "ambientika_humidity_level",
+    "ambientika_light_sensor",
+    "measure_temperature",
+    "measure_humidity",
+    "ambientika_air_quality",
+    "alarm_moisture",
+    "ambientika_filter_status",
+    "ambientika_night",
+    "button.reset_filter"
+  ],
+  "options": {
+    "alarm_moisture": {
+      "title": {
+        "en": "Humidity Alarm",
+        "de": "Luftfeuchte Alarm",
+        "nl": "Vochtalarm",
+        "it": "Allarme umidità",
+        "fr": "Alarme d'humidité",
+        "es": "Alarma de humedad",
+        "da": "Fugtalarm",
+        "sv": "Fuktlarm",
+        "pl": "Alarm wilgotności"
+      }
+    },
+    "button.reset_filter": {
+      "title": {
+        "en": "Filter Reset",
+        "de": "Filter zurücksetzen",
+        "nl": "Filter resetten",
+        "it": "Reset filtro",
+        "fr": "Réinitialiser le filtre",
+        "es": "Restablecer filtro",
+        "da": "Nulstil filter",
+        "sv": "Återställ filter",
+        "pl": "Reset filtra"
+      },
+      "maintenanceAction": true
+    }
+  }
+}

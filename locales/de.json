@@ -1,0 +1,61 @@
+{
+  "errors": {
+    "slave": "Dieses Gerät ist ein Slave und läuft mit dem Master seiner Zone. Bitte die Einstellung am Master ändern.",
+    "offline": "Im Moment keine Verbindung zur Ambientika-Cloud. Bitte gleich nochmals versuchen.",
+    "rejected": "Die Ambientika-Cloud nimmt E-Mail-Adresse und Passwort nicht an. Bitte das Gerät mit den Zugangsdaten der Ambientika App reparieren.",
+    "unit": "Das Gerät antwortet der Ambientika-Cloud nicht. Ist es eingeschaltet und mit dem WLAN verbunden?",
+    "removed": "Das Gerät ist nicht mehr im Ambientika-Konto.",
+    "command": "Die Ambientika-Cloud hat den Befehl nicht angenommen: __message__",
+    "login": "E-Mail-Adresse oder Passwort nicht angenommen. Bitte die Zugangsdaten der Ambientika App verwenden.",
+    "connect": "Die Ambientika-Cloud ist nicht erreichbar: __message__",
+    "otherAccount": "Dieses Gerät gehört zu einem anderen Ambientika-Konto. Bitte mit den Zugangsdaten anmelden, mit denen das Gerät hinzugefügt wurde.",
+    "slaveFilter": "Ein Slave hat einen eigenen Filterzähler; bitte direkt am Gerät zurücksetzen."
+  },
+  "mode": {
+    "smart": "Smart",
+    "auto": "Auto",
+    "manual_heat_recovery": "Manuell mit Wärmerückgewinnung",
+    "night": "Nacht",
+    "away_home": "Abwesend",
+    "surveillance": "Überwachung",
+    "timed_expulsion": "Zeitgesteuerte Abluft",
+    "expulsion": "Abluft",
+    "intake": "Zuluft",
+    "master_slave_flow": "Durchfluss Master zu Slave",
+    "slave_master_flow": "Durchfluss Slave zu Master",
+    "off": "Aus"
+  },
+  "fan": {
+    "low": "Niedrig",
+    "medium": "Mittel",
+    "high": "Hoch"
+  },
+  "humidity": {
+    "dry": "Trocken",
+    "normal": "Normal",
+    "moist": "Feucht"
+  },
+  "light": {
+    "off": "Aus",
+    "low": "Niedrig",
+    "high": "Hoch"
+  },
+  "air_quality": {
+    "very_good": "sehr gut",
+    "good": "gut",
+    "medium": "mittel",
+    "poor": "schlecht",
+    "bad": "sehr schlecht"
+  },
+  "filter": {
+    "bad": "schlecht",
+    "medium": "mittel",
+    "good": "gut"
+  },
+  "role": {
+    "master": "Master",
+    "slave_equal_master": "Slave, gleichläufig zum Master",
+    "slave_opposite_master": "Slave, gegenläufig zum Master",
+    "not_configured": "Nicht konfiguriert"
+  }
+}

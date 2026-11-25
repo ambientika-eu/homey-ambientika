@@ -1,0 +1,114 @@
+[
+  {
+    "type": "group",
+    "label": {
+      "en": "Unit in the Ambientika app",
+      "de": "Gerät in der Ambientika App",
+      "nl": "Unit in de Ambientika-app",
+      "it": "Unità nell'app Ambientika",
+      "fr": "Unité dans l'app Ambientika",
+      "es": "Unidad en la app Ambientika",
+      "da": "Enhed i Ambientika-appen",
+      "sv": "Aggregat i Ambientika-appen",
+      "pl": "Urządzenie w aplikacji Ambientika"
+    },
+    "children": [
+      {
+        "id": "serial",
+        "type": "label",
+        "label": {
+          "en": "Serial number",
+          "de": "Seriennummer",
+          "nl": "Serienummer",
+          "it": "Numero di serie",
+          "fr": "Numéro de série",
+          "es": "Número de serie",
+          "da": "Serienummer",
+          "sv": "Serienummer",
+          "pl": "Numer seryjny"
+        },
+        "value": ""
+      },
+      {
+        "id": "role",
+        "type": "label",
+        "label": {
+          "en": "Role",
+          "de": "Rolle",
+          "nl": "Rol",
+          "it": "Ruolo",
+          "fr": "Rôle",
+          "es": "Función",
+          "da": "Rolle",
+          "sv": "Roll",
+          "pl": "Rola"
+        },
+        "value": ""
+      },
+      {
+        "id": "zone",
+        "type": "label",
+        "label": {
+          "en": "Zone",
+          "de": "Zone",
+          "nl": "Zone",
+          "it": "Zona",
+          "fr": "Zone",
+          "es": "Zona",
+          "da": "Zone",
+          "sv": "Zon",
+          "pl": "Strefa"
+        },
+        "value": ""
+      },
+      {
+        "id": "room",
+        "type": "label",
+        "label": {
+          "en": "Room",
+          "de": "Raum",
+          "nl": "Ruimte",
+          "it": "Stanza",
+          "fr": "Pièce",
+          "es": "Habitación",
+          "da": "Rum",
+          "sv": "Rum",
+          "pl": "Pomieszczenie"
+        },
+        "value": ""
+      },
+      {
+        "id": "house",
+        "type": "label",
+        "label": {
+          "en": "House",
+          "de": "Haus",
+          "nl": "Huis",
+          "it": "Casa",
+          "fr": "Maison",
+          "es": "Casa",
+          "da": "Hus",
+          "sv": "Hus",
+          "pl": "Dom"
+        },
+        "value": ""
+      },
+      {
+        "id": "account",
+        "type": "label",
+        "label": {
+          "en": "Account",
+          "de": "Konto",
+          "nl": "Account",
+          "it": "Account",
+          "fr": "Compte",
+          "es": "Cuenta",
+          "da": "Konto",
+          "sv": "Konto",
+          "pl": "Konto"
+        },
+        "value": ""
+      }
+    ]
+  }
+]

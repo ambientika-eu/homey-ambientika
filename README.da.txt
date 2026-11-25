@@ -1,0 +1,3 @@
+Ambientika-ventilationsenheder giver frisk luft i hvert rum og holder varmen inde: en keramisk varmeveksler genvinder op til 93 % af varmen fra udsugningsluften. Log ind med e-mailadresse og adgangskode til Ambientika-appen, så vises SMART- og OFFICE-enhederne på din konto med de navne, du har givet dem der.
+
+Tænd og sluk enheder, vælg tilstand, ventilatortrin, fugtniveau og skumringssensor, og se temperatur, luftfugtighed, luftkvalitet og filterstatus. Brug det hele i flows, for eksempel tilstanden Ude, når alle er gået, eller en besked, når filtrene skal rengøres. En enhed, der kører som Slave, følger Masteren i sin zone. Appen bruger Ambientika-skyen ligesom Ambientika-appen og kommer fra Südwind, producenten af Ambientika.

@@ -1,0 +1,3 @@
+Le unità di ventilazione Ambientika portano aria fresca in ogni stanza e trattengono il calore: uno scambiatore ceramico recupera fino al 93 % del calore dell'aria in uscita. Accedi con indirizzo e-mail e password dell'app Ambientika: le unità SMART e OFFICE del tuo account compaiono con i nomi che hai dato lì.
+
+Accendi e spegni le unità, scegli modalità, velocità, livello di umidità e sensore crepuscolare, e vedi temperatura, umidità, qualità dell'aria e stato del filtro. Usa tutto nei flow, per esempio la modalità Assente quando tutti escono di casa, o un messaggio quando i filtri vanno puliti. Un'unità che funziona come Slave segue il Master della sua zona. L'app usa il cloud Ambientika, come l'app Ambientika, ed è realizzata da Südwind, il produttore di Ambientika.

@@ -1,0 +1,62 @@
+{
+  "type": "enum",
+  "title": {
+    "en": "Humidity Level",
+    "de": "Feuchtestufe",
+    "nl": "Vochtigheidsniveau",
+    "it": "Livello di umidità",
+    "fr": "Niveau d'humidité",
+    "es": "Nivel de humedad",
+    "da": "Fugtniveau",
+    "sv": "Fuktnivå",
+    "pl": "Poziom wilgotności"
+  },
+  "getable": true,
+  "setable": true,
+  "uiComponent": "picker",
+  "insights": false,
+  "values": [
+    {
+      "id": "dry",
+      "title": {
+        "en": "Dry",
+        "de": "Trocken",
+        "nl": "Droog",
+        "it": "Secco",
+        "fr": "Sec",
+        "es": "Seco",
+        "da": "Tør",
+        "sv": "Torr",
+        "pl": "Sucho"
+      }
+    },
+    {
+      "id": "normal",
+      "title": {
+        "en": "Normal",
+        "de": "Normal",
+        "nl": "Normaal",
+        "it": "Normale",
+        "fr": "Normal",
+        "es": "Normal",
+        "da": "Normal",
+        "sv": "Normal",
+        "pl": "Normalnie"
+      }
+    },
+    {
+      "id": "moist",
+      "title": {
+        "en": "Moist",
+        "de": "Feucht",
+        "nl": "Vochtig",
+        "it": "Umido",
+        "fr": "Humide",
+        "es": "Húmedo",
+        "da": "Fugtig",
+        "sv": "Fuktig",
+        "pl": "Wilgotno"
+      }
+    }
+  ]
+}

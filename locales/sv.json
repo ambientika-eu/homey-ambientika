@@ -1,0 +1,61 @@
+{
+  "errors": {
+    "slave": "Detta aggregat är en Slave och går med Mastern i sin zon. Ändra inställningen på Mastern.",
+    "offline": "Ingen anslutning till Ambientika-molnet just nu. Försök igen om en stund.",
+    "rejected": "Ambientika-molnet godtar inte e-postadress och lösenord. Reparera enheten med inloggningen till Ambientika-appen.",
+    "unit": "Aggregatet svarar inte Ambientika-molnet. Är det påslaget och anslutet till wifi?",
+    "removed": "Aggregatet finns inte längre i Ambientika-kontot.",
+    "command": "Ambientika-molnet godtog inte kommandot: __message__",
+    "login": "E-postadress eller lösenord godtogs inte. Använd inloggningen till Ambientika-appen.",
+    "connect": "Ambientika-molnet kan inte nås: __message__",
+    "otherAccount": "Detta aggregat hör till ett annat Ambientika-konto. Logga in med inloggningen som aggregatet lades till med.",
+    "slaveFilter": "En Slave har en egen filterräknare; nollställ den direkt på aggregatet."
+  },
+  "mode": {
+    "smart": "Smart",
+    "auto": "Auto",
+    "manual_heat_recovery": "Manuell med värmeåtervinning",
+    "night": "Natt",
+    "away_home": "Borta",
+    "surveillance": "Övervakning",
+    "timed_expulsion": "Tidsstyrd frånluft",
+    "expulsion": "Frånluft",
+    "intake": "Tilluft",
+    "master_slave_flow": "Flöde från Master till Slave",
+    "slave_master_flow": "Flöde från Slave till Master",
+    "off": "Av"
+  },
+  "fan": {
+    "low": "Låg",
+    "medium": "Medel",
+    "high": "Hög"
+  },
+  "humidity": {
+    "dry": "Torr",
+    "normal": "Normal",
+    "moist": "Fuktig"
+  },
+  "light": {
+    "off": "Av",
+    "low": "Låg",
+    "high": "Hög"
+  },
+  "air_quality": {
+    "very_good": "Mycket bra",
+    "good": "Bra",
+    "medium": "Medel",
+    "poor": "Dålig",
+    "bad": "Mycket dålig"
+  },
+  "filter": {
+    "bad": "Dålig",
+    "medium": "Medel",
+    "good": "Bra"
+  },
+  "role": {
+    "master": "Master",
+    "slave_equal_master": "Slave, samma riktning som Master",
+    "slave_opposite_master": "Slave, motsatt riktning mot Master",
+    "not_configured": "Inte konfigurerad"
+  }
+}

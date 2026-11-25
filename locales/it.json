@@ -1,0 +1,61 @@
+{
+  "errors": {
+    "slave": "Questa unità è uno Slave e funziona con il Master della sua zona. Modifica l'impostazione sul Master.",
+    "offline": "Al momento nessuna connessione al cloud Ambientika. Riprova tra poco.",
+    "rejected": "Il cloud Ambientika non accetta indirizzo e-mail e password. Ripara il dispositivo con le credenziali dell'app Ambientika.",
+    "unit": "L'unità non risponde al cloud Ambientika. È accesa e collegata al Wi-Fi?",
+    "removed": "L'unità non è più nell'account Ambientika.",
+    "command": "Il cloud Ambientika non ha accettato il comando: __message__",
+    "login": "Indirizzo e-mail o password non accettati. Usa le credenziali dell'app Ambientika.",
+    "connect": "Il cloud Ambientika non è raggiungibile: __message__",
+    "otherAccount": "Questa unità appartiene a un altro account Ambientika. Accedi con le credenziali con cui l'unità è stata aggiunta.",
+    "slaveFilter": "Uno Slave ha un proprio contatore del filtro; azzeralo direttamente sull'unità."
+  },
+  "mode": {
+    "smart": "Smart",
+    "auto": "Auto",
+    "manual_heat_recovery": "Manuale con recupero di calore",
+    "night": "Notte",
+    "away_home": "Assente",
+    "surveillance": "Sorveglianza",
+    "timed_expulsion": "Estrazione temporizzata",
+    "expulsion": "Estrazione",
+    "intake": "Immissione",
+    "master_slave_flow": "Flusso da Master a Slave",
+    "slave_master_flow": "Flusso da Slave a Master",
+    "off": "Spento"
+  },
+  "fan": {
+    "low": "Bassa",
+    "medium": "Media",
+    "high": "Alta"
+  },
+  "humidity": {
+    "dry": "Secco",
+    "normal": "Normale",
+    "moist": "Umido"
+  },
+  "light": {
+    "off": "Spento",
+    "low": "Bassa",
+    "high": "Alta"
+  },
+  "air_quality": {
+    "very_good": "Ottima",
+    "good": "Buona",
+    "medium": "Media",
+    "poor": "Scarsa",
+    "bad": "Pessima"
+  },
+  "filter": {
+    "bad": "Scarso",
+    "medium": "Medio",
+    "good": "Buono"
+  },
+  "role": {
+    "master": "Master",
+    "slave_equal_master": "Slave, stesso verso del Master",
+    "slave_opposite_master": "Slave, verso opposto al Master",
+    "not_configured": "Non configurato"
+  }
+}

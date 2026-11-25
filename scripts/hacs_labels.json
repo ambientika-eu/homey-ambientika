@@ -1,0 +1,524 @@
+{
+ "en": {
+  "mode_name": "Mode",
+  "mode": {
+   "smart": "Smart",
+   "auto": "Auto",
+   "manual_heat_recovery": "Manual heat recovery",
+   "night": "Night",
+   "away_home": "Away",
+   "surveillance": "Surveillance",
+   "timed_expulsion": "Timed extraction",
+   "expulsion": "Extraction",
+   "intake": "Intake",
+   "master_slave_flow": "Flow Master to Slave",
+   "slave_master_flow": "Flow Slave to Master",
+   "off": "Off"
+  },
+  "fan_name": "Fan Speed",
+  "fan": {
+   "low": "Low",
+   "medium": "Medium",
+   "high": "High"
+  },
+  "hum_name": "Humidity Level",
+  "hum": {
+   "dry": "Dry",
+   "normal": "Normal",
+   "moist": "Moist"
+  },
+  "light_name": "Dusk Sensor Sensitivity",
+  "light": {
+   "off": "Off",
+   "low": "Low",
+   "medium": "High"
+  },
+  "aq_name": "Air Quality",
+  "aq": {
+   "very_good": "Very Good",
+   "good": "Good",
+   "medium": "Medium",
+   "poor": "Poor",
+   "bad": "Bad"
+  },
+  "filter_name": "Filter Status",
+  "filter": {
+   "bad": "Bad",
+   "medium": "Medium",
+   "good": "Good"
+  },
+  "night": "Night Mode",
+  "humalarm": "Humidity Alarm",
+  "reset": "Filter Reset",
+  "role": {
+   "master": "Master",
+   "slave_equal_master": "Slave, same direction as Master",
+   "slave_opposite_master": "Slave, opposite direction to Master",
+   "not_configured": "Not configured"
+  }
+ },
+ "de": {
+  "mode_name": "Modus",
+  "mode": {
+   "smart": "Smart",
+   "auto": "Auto",
+   "manual_heat_recovery": "Manuell mit Wärmerückgewinnung",
+   "night": "Nacht",
+   "away_home": "Abwesend",
+   "surveillance": "Überwachung",
+   "timed_expulsion": "Zeitgesteuerte Abluft",
+   "expulsion": "Abluft",
+   "intake": "Zuluft",
+   "master_slave_flow": "Durchfluss Master zu Slave",
+   "slave_master_flow": "Durchfluss Slave zu Master",
+   "off": "Aus"
+  },
+  "fan_name": "Lüfterstufe",
+  "fan": {
+   "low": "Niedrig",
+   "medium": "Mittel",
+   "high": "Hoch"
+  },
+  "hum_name": "Feuchtestufe",
+  "hum": {
+   "dry": "Trocken",
+   "normal": "Normal",
+   "moist": "Feucht"
+  },
+  "light_name": "Empfindlichkeit Dämmerungssensor",
+  "light": {
+   "off": "Aus",
+   "low": "Niedrig",
+   "medium": "Hoch"
+  },
+  "aq_name": "Luftqualität",
+  "aq": {
+   "very_good": "sehr gut",
+   "good": "gut",
+   "medium": "mittel",
+   "poor": "schlecht",
+   "bad": "sehr schlecht"
+  },
+  "filter_name": "Filter Status",
+  "filter": {
+   "bad": "schlecht",
+   "medium": "mittel",
+   "good": "gut"
+  },
+  "night": "Nachtmodus",
+  "humalarm": "Luftfeuchte Alarm",
+  "reset": "Filter zurücksetzen",
+  "role": {
+   "master": "Master",
+   "slave_equal_master": "Slave, gleichläufig zum Master",
+   "slave_opposite_master": "Slave, gegenläufig zum Master",
+   "not_configured": "Nicht konfiguriert"
+  }
+ },
+ "nl": {
+  "mode_name": "Modus",
+  "mode": {
+   "smart": "Smart",
+   "auto": "Auto",
+   "manual_heat_recovery": "Handmatig met warmteterugwinning",
+   "night": "Nacht",
+   "away_home": "Afwezig",
+   "surveillance": "Bewaking",
+   "timed_expulsion": "Getimede afvoer",
+   "expulsion": "Afvoer",
+   "intake": "Toevoer",
+   "master_slave_flow": "Stroming van Master naar Slave",
+   "slave_master_flow": "Stroming van Slave naar Master",
+   "off": "Uit"
+  },
+  "fan_name": "Ventilatorsnelheid",
+  "fan": {
+   "low": "Laag",
+   "medium": "Middel",
+   "high": "Hoog"
+  },
+  "hum_name": "Vochtigheidsniveau",
+  "hum": {
+   "dry": "Droog",
+   "normal": "Normaal",
+   "moist": "Vochtig"
+  },
+  "light_name": "Gevoeligheid schemersensor",
+  "light": {
+   "off": "Uit",
+   "low": "Laag",
+   "medium": "Hoog"
+  },
+  "aq_name": "Luchtkwaliteit",
+  "aq": {
+   "very_good": "Zeer goed",
+   "good": "Goed",
+   "medium": "Matig",
+   "poor": "Slecht",
+   "bad": "Zeer slecht"
+  },
+  "filter_name": "Filterstatus",
+  "filter": {
+   "bad": "Slecht",
+   "medium": "Matig",
+   "good": "Goed"
+  },
+  "night": "Nachtmodus",
+  "humalarm": "Vochtalarm",
+  "reset": "Filter resetten",
+  "role": {
+   "master": "Master",
+   "slave_equal_master": "Slave, zelfde richting als Master",
+   "slave_opposite_master": "Slave, tegengesteld aan Master",
+   "not_configured": "Niet geconfigureerd"
+  }
+ },
+ "it": {
+  "mode_name": "Modalità",
+  "mode": {
+   "smart": "Smart",
+   "auto": "Auto",
+   "manual_heat_recovery": "Manuale con recupero di calore",
+   "night": "Notte",
+   "away_home": "Assente",
+   "surveillance": "Sorveglianza",
+   "timed_expulsion": "Estrazione temporizzata",
+   "expulsion": "Estrazione",
+   "intake": "Immissione",
+   "master_slave_flow": "Flusso da Master a Slave",
+   "slave_master_flow": "Flusso da Slave a Master",
+   "off": "Spento"
+  },
+  "fan_name": "Velocità ventola",
+  "fan": {
+   "low": "Bassa",
+   "medium": "Media",
+   "high": "Alta"
+  },
+  "hum_name": "Livello di umidità",
+  "hum": {
+   "dry": "Secco",
+   "normal": "Normale",
+   "moist": "Umido"
+  },
+  "light_name": "Sensibilità sensore crepuscolare",
+  "light": {
+   "off": "Spento",
+   "low": "Bassa",
+   "medium": "Alta"
+  },
+  "aq_name": "Qualità dell'aria",
+  "aq": {
+   "very_good": "Ottima",
+   "good": "Buona",
+   "medium": "Media",
+   "poor": "Scarsa",
+   "bad": "Pessima"
+  },
+  "filter_name": "Stato filtro",
+  "filter": {
+   "bad": "Scarso",
+   "medium": "Medio",
+   "good": "Buono"
+  },
+  "night": "Modalità notte",
+  "humalarm": "Allarme umidità",
+  "reset": "Reset filtro",
+  "role": {
+   "master": "Master",
+   "slave_equal_master": "Slave, stesso verso del Master",
+   "slave_opposite_master": "Slave, verso opposto al Master",
+   "not_configured": "Non configurato"
+  }
+ },
+ "fr": {
+  "mode_name": "Mode",
+  "mode": {
+   "smart": "Smart",
+   "auto": "Auto",
+   "manual_heat_recovery": "Manuel avec récupération de chaleur",
+   "night": "Nuit",
+   "away_home": "Absent",
+   "surveillance": "Surveillance",
+   "timed_expulsion": "Extraction temporisée",
+   "expulsion": "Extraction",
+   "intake": "Insufflation",
+   "master_slave_flow": "Flux du Master vers le Slave",
+   "slave_master_flow": "Flux du Slave vers le Master",
+   "off": "Arrêt"
+  },
+  "fan_name": "Vitesse du ventilateur",
+  "fan": {
+   "low": "Basse",
+   "medium": "Moyenne",
+   "high": "Haute"
+  },
+  "hum_name": "Niveau d'humidité",
+  "hum": {
+   "dry": "Sec",
+   "normal": "Normal",
+   "moist": "Humide"
+  },
+  "light_name": "Sensibilité du capteur crépusculaire",
+  "light": {
+   "off": "Désactivé",
+   "low": "Basse",
+   "medium": "Haute"
+  },
+  "aq_name": "Qualité de l'air",
+  "aq": {
+   "very_good": "Très bonne",
+   "good": "Bonne",
+   "medium": "Moyenne",
+   "poor": "Médiocre",
+   "bad": "Mauvaise"
+  },
+  "filter_name": "État du filtre",
+  "filter": {
+   "bad": "Mauvais",
+   "medium": "Moyen",
+   "good": "Bon"
+  },
+  "night": "Mode nuit",
+  "humalarm": "Alarme d'humidité",
+  "reset": "Réinitialiser le filtre",
+  "role": {
+   "master": "Master",
+   "slave_equal_master": "Slave, même sens que le Master",
+   "slave_opposite_master": "Slave, sens opposé au Master",
+   "not_configured": "Non configuré"
+  }
+ },
+ "es": {
+  "mode_name": "Modo",
+  "mode": {
+   "smart": "Smart",
+   "auto": "Auto",
+   "manual_heat_recovery": "Manual con recuperación de calor",
+   "night": "Noche",
+   "away_home": "Ausente",
+   "surveillance": "Vigilancia",
+   "timed_expulsion": "Extracción temporizada",
+   "expulsion": "Extracción",
+   "intake": "Impulsión",
+   "master_slave_flow": "Flujo de Master a Slave",
+   "slave_master_flow": "Flujo de Slave a Master",
+   "off": "Apagado"
+  },
+  "fan_name": "Velocidad del ventilador",
+  "fan": {
+   "low": "Baja",
+   "medium": "Media",
+   "high": "Alta"
+  },
+  "hum_name": "Nivel de humedad",
+  "hum": {
+   "dry": "Seco",
+   "normal": "Normal",
+   "moist": "Húmedo"
+  },
+  "light_name": "Sensibilidad del sensor crepuscular",
+  "light": {
+   "off": "Apagado",
+   "low": "Baja",
+   "medium": "Alta"
+  },
+  "aq_name": "Calidad del aire",
+  "aq": {
+   "very_good": "Muy buena",
+   "good": "Buena",
+   "medium": "Media",
+   "poor": "Mala",
+   "bad": "Muy mala"
+  },
+  "filter_name": "Estado del filtro",
+  "filter": {
+   "bad": "Malo",
+   "medium": "Medio",
+   "good": "Bueno"
+  },
+  "night": "Modo noche",
+  "humalarm": "Alarma de humedad",
+  "reset": "Restablecer filtro",
+  "role": {
+   "master": "Master",
+   "slave_equal_master": "Slave, mismo sentido que el Master",
+   "slave_opposite_master": "Slave, sentido opuesto al Master",
+   "not_configured": "Sin configurar"
+  }
+ },
+ "da": {
+  "mode_name": "Tilstand",
+  "mode": {
+   "smart": "Smart",
+   "auto": "Auto",
+   "manual_heat_recovery": "Manuel med varmegenvinding",
+   "night": "Nat",
+   "away_home": "Ude",
+   "surveillance": "Overvågning",
+   "timed_expulsion": "Tidsstyret udsugning",
+   "expulsion": "Udsugning",
+   "intake": "Indblæsning",
+   "master_slave_flow": "Strømning fra Master til Slave",
+   "slave_master_flow": "Strømning fra Slave til Master",
+   "off": "Slukket"
+  },
+  "fan_name": "Ventilatorhastighed",
+  "fan": {
+   "low": "Lav",
+   "medium": "Mellem",
+   "high": "Høj"
+  },
+  "hum_name": "Fugtniveau",
+  "hum": {
+   "dry": "Tør",
+   "normal": "Normal",
+   "moist": "Fugtig"
+  },
+  "light_name": "Følsomhed for skumringssensor",
+  "light": {
+   "off": "Fra",
+   "low": "Lav",
+   "medium": "Høj"
+  },
+  "aq_name": "Luftkvalitet",
+  "aq": {
+   "very_good": "Meget god",
+   "good": "God",
+   "medium": "Middel",
+   "poor": "Dårlig",
+   "bad": "Meget dårlig"
+  },
+  "filter_name": "Filterstatus",
+  "filter": {
+   "bad": "Dårlig",
+   "medium": "Middel",
+   "good": "God"
+  },
+  "night": "Nattilstand",
+  "humalarm": "Fugtalarm",
+  "reset": "Nulstil filter",
+  "role": {
+   "master": "Master",
+   "slave_equal_master": "Slave, samme retning som Master",
+   "slave_opposite_master": "Slave, modsat retning af Master",
+   "not_configured": "Ikke konfigureret"
+  }
+ },
+ "sv": {
+  "mode_name": "Läge",
+  "mode": {
+   "smart": "Smart",
+   "auto": "Auto",
+   "manual_heat_recovery": "Manuell med värmeåtervinning",
+   "night": "Natt",
+   "away_home": "Borta",
+   "surveillance": "Övervakning",
+   "timed_expulsion": "Tidsstyrd frånluft",
+   "expulsion": "Frånluft",
+   "intake": "Tilluft",
+   "master_slave_flow": "Flöde från Master till Slave",
+   "slave_master_flow": "Flöde från Slave till Master",
+   "off": "Av"
+  },
+  "fan_name": "Fläkthastighet",
+  "fan": {
+   "low": "Låg",
+   "medium": "Medel",
+   "high": "Hög"
+  },
+  "hum_name": "Fuktnivå",
+  "hum": {
+   "dry": "Torr",
+   "normal": "Normal",
+   "moist": "Fuktig"
+  },
+  "light_name": "Känslighet för skymningssensor",
+  "light": {
+   "off": "Av",
+   "low": "Låg",
+   "medium": "Hög"
+  },
+  "aq_name": "Luftkvalitet",
+  "aq": {
+   "very_good": "Mycket bra",
+   "good": "Bra",
+   "medium": "Medel",
+   "poor": "Dålig",
+   "bad": "Mycket dålig"
+  },
+  "filter_name": "Filterstatus",
+  "filter": {
+   "bad": "Dålig",
+   "medium": "Medel",
+   "good": "Bra"
+  },
+  "night": "Nattläge",
+  "humalarm": "Fuktlarm",
+  "reset": "Återställ filter",
+  "role": {
+   "master": "Master",
+   "slave_equal_master": "Slave, samma riktning som Master",
+   "slave_opposite_master": "Slave, motsatt riktning mot Master",
+   "not_configured": "Inte konfigurerad"
+  }
+ },
+ "pl": {
+  "mode_name": "Tryb",
+  "mode": {
+   "smart": "Smart",
+   "auto": "Auto",
+   "manual_heat_recovery": "Ręczny z odzyskiem ciepła",
+   "night": "Noc",
+   "away_home": "Poza domem",
+   "surveillance": "Nadzór",
+   "timed_expulsion": "Wywiew czasowy",
+   "expulsion": "Wywiew",
+   "intake": "Nawiew",
+   "master_slave_flow": "Przepływ od Master do Slave",
+   "slave_master_flow": "Przepływ od Slave do Master",
+   "off": "Wyłączony"
+  },
+  "fan_name": "Prędkość wentylatora",
+  "fan": {
+   "low": "Niska",
+   "medium": "Średnia",
+   "high": "Wysoka"
+  },
+  "hum_name": "Poziom wilgotności",
+  "hum": {
+   "dry": "Sucho",
+   "normal": "Normalnie",
+   "moist": "Wilgotno"
+  },
+  "light_name": "Czułość czujnika zmierzchu",
+  "light": {
+   "off": "Wyłączony",
+   "low": "Niska",
+   "medium": "Wysoka"
+  },
+  "aq_name": "Jakość powietrza",
+  "aq": {
+   "very_good": "Bardzo dobra",
+   "good": "Dobra",
+   "medium": "Średnia",
+   "poor": "Słaba",
+   "bad": "Zła"
+  },
+  "filter_name": "Stan filtra",
+  "filter": {
+   "bad": "Zły",
+   "medium": "Średni",
+   "good": "Dobry"
+  },
+  "night": "Tryb nocny",
+  "humalarm": "Alarm wilgotności",
+  "reset": "Reset filtra",
+  "role": {
+   "master": "Master",
+   "slave_equal_master": "Slave, zgodnie z Master",
+   "slave_opposite_master": "Slave, przeciwnie do Master",
+   "not_configured": "Nieskonfigurowany"
+  }
+ }
+}

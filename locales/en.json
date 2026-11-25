@@ -1,0 +1,61 @@
+{
+  "errors": {
+    "slave": "This unit is a Slave and runs with the Master of its zone. Please change the setting at the Master.",
+    "offline": "No connection to the Ambientika cloud at the moment. Please try again shortly.",
+    "rejected": "The Ambientika cloud does not accept e-mail address and password. Please repair the device with the login of the Ambientika app.",
+    "unit": "The unit does not answer the Ambientika cloud. Is it switched on and connected to the Wi-Fi?",
+    "removed": "The unit is no longer in the Ambientika account.",
+    "command": "The Ambientika cloud did not accept the command: __message__",
+    "login": "E-mail address or password not accepted. Please use the login of the Ambientika app.",
+    "connect": "The Ambientika cloud cannot be reached: __message__",
+    "otherAccount": "This unit belongs to another Ambientika account. Please sign in with the login under which the unit was added.",
+    "slaveFilter": "A Slave keeps its own filter counter; please reset it at the unit."
+  },
+  "mode": {
+    "smart": "Smart",
+    "auto": "Auto",
+    "manual_heat_recovery": "Manual heat recovery",
+    "night": "Night",
+    "away_home": "Away",
+    "surveillance": "Surveillance",
+    "timed_expulsion": "Timed extraction",
+    "expulsion": "Extraction",
+    "intake": "Intake",
+    "master_slave_flow": "Flow Master to Slave",
+    "slave_master_flow": "Flow Slave to Master",
+    "off": "Off"
+  },
+  "fan": {
+    "low": "Low",
+    "medium": "Medium",
+    "high": "High"
+  },
+  "humidity": {
+    "dry": "Dry",
+    "normal": "Normal",
+    "moist": "Moist"
+  },
+  "light": {
+    "off": "Off",
+    "low": "Low",
+    "high": "High"
+  },
+  "air_quality": {
+    "very_good": "Very Good",
+    "good": "Good",
+    "medium": "Medium",
+    "poor": "Poor",
+    "bad": "Bad"
+  },
+  "filter": {
+    "bad": "Bad",
+    "medium": "Medium",
+    "good": "Good"
+  },
+  "role": {
+    "master": "Master",
+    "slave_equal_master": "Slave, same direction as Master",
+    "slave_opposite_master": "Slave, opposite direction to Master",
+    "not_configured": "Not configured"
+  }
+}

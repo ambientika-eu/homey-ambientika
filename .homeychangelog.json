@@ -1,0 +1,13 @@
+{
+  "1.0.0": {
+    "en": "First version: SMART and OFFICE units of the Ambientika account, operating mode, fan speed, humidity level, light sensor, sensors and flow cards.",
+    "de": "Erste Version: SMART- und OFFICE-Geräte des Ambientika-Kontos, Modus, Lüfterstufe, Feuchtestufe, Dämmerungssensor, Sensoren und Flow-Karten.",
+    "nl": "Eerste versie: SMART- en OFFICE-units van het Ambientika-account, modus, ventilatorsnelheid, vochtigheidsniveau, schemersensor, sensoren en flowkaarten.",
+    "it": "Prima versione: unità SMART e OFFICE dell'account Ambientika, modalità, velocità, livello di umidità, sensore crepuscolare, sensori e schede flow.",
+    "fr": "Première version : unités SMART et OFFICE du compte Ambientika, mode, vitesse, niveau d'humidité, capteur crépusculaire, capteurs et cartes flow.",
+    "es": "Primera versión: unidades SMART y OFFICE de la cuenta Ambientika, modo, velocidad, nivel de humedad, sensor crepuscular, sensores y tarjetas flow.",
+    "da": "Første version: SMART- og OFFICE-enheder på Ambientika-kontoen, tilstand, ventilatortrin, fugtniveau, skumringssensor, sensorer og flowkort.",
+    "sv": "Första versionen: SMART- och OFFICE-aggregat i Ambientika-kontot, läge, fläktsteg, fuktnivå, skymningssensor, sensorer och flödeskort.",
+    "pl": "Pierwsza wersja: urządzenia SMART i OFFICE z konta Ambientika, tryb, bieg wentylatora, poziom wilgotności, czujnik zmierzchu, czujniki i karty flow."
+  }
+}

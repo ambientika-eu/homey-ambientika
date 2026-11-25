@@ -1,0 +1,61 @@
+{
+  "errors": {
+    "slave": "To urządzenie jest Slave i pracuje razem z Masterem swojej strefy. Zmień ustawienie na Masterze.",
+    "offline": "Brak połączenia z chmurą Ambientika. Spróbuj ponownie za chwilę.",
+    "rejected": "Chmura Ambientika nie akceptuje adresu e-mail i hasła. Napraw urządzenie, używając danych z aplikacji Ambientika.",
+    "unit": "Urządzenie nie odpowiada chmurze Ambientika. Czy jest włączone i połączone z Wi-Fi?",
+    "removed": "Urządzenia nie ma już na koncie Ambientika.",
+    "command": "Chmura Ambientika nie przyjęła polecenia: __message__",
+    "login": "Nie zaakceptowano adresu e-mail lub hasła. Użyj danych z aplikacji Ambientika.",
+    "connect": "Chmura Ambientika jest niedostępna: __message__",
+    "otherAccount": "To urządzenie należy do innego konta Ambientika. Zaloguj się danymi, z którymi zostało dodane.",
+    "slaveFilter": "Slave ma własny licznik filtra; wyzeruj go bezpośrednio na urządzeniu."
+  },
+  "mode": {
+    "smart": "Smart",
+    "auto": "Auto",
+    "manual_heat_recovery": "Ręczny z odzyskiem ciepła",
+    "night": "Noc",
+    "away_home": "Poza domem",
+    "surveillance": "Nadzór",
+    "timed_expulsion": "Wywiew czasowy",
+    "expulsion": "Wywiew",
+    "intake": "Nawiew",
+    "master_slave_flow": "Przepływ od Master do Slave",
+    "slave_master_flow": "Przepływ od Slave do Master",
+    "off": "Wyłączony"
+  },
+  "fan": {
+    "low": "Niska",
+    "medium": "Średnia",
+    "high": "Wysoka"
+  },
+  "humidity": {
+    "dry": "Sucho",
+    "normal": "Normalnie",
+    "moist": "Wilgotno"
+  },
+  "light": {
+    "off": "Wyłączony",
+    "low": "Niska",
+    "high": "Wysoka"
+  },
+  "air_quality": {
+    "very_good": "Bardzo dobra",
+    "good": "Dobra",
+    "medium": "Średnia",
+    "poor": "Słaba",
+    "bad": "Zła"
+  },
+  "filter": {
+    "bad": "Zły",
+    "medium": "Średni",
+    "good": "Dobry"
+  },
+  "role": {
+    "master": "Master",
+    "slave_equal_master": "Slave, zgodnie z Master",
+    "slave_opposite_master": "Slave, przeciwnie do Master",
+    "not_configured": "Nieskonfigurowany"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "errors": {
+    "slave": "Denne enhed er en Slave og kører med Masteren i sin zone. Skift indstillingen på Masteren.",
+    "offline": "Ingen forbindelse til Ambientika-skyen lige nu. Prøv igen om lidt.",
+    "rejected": "Ambientika-skyen accepterer ikke e-mailadresse og adgangskode. Reparer enheden med login til Ambientika-appen.",
+    "unit": "Enheden svarer ikke Ambientika-skyen. Er den tændt og forbundet til wifi?",
+    "removed": "Enheden er ikke længere på Ambientika-kontoen.",
+    "command": "Ambientika-skyen accepterede ikke kommandoen: __message__",
+    "login": "E-mailadresse eller adgangskode ikke accepteret. Brug login til Ambientika-appen.",
+    "connect": "Ambientika-skyen kan ikke nås: __message__",
+    "otherAccount": "Denne enhed hører til en anden Ambientika-konto. Log ind med det login, enheden blev tilføjet med.",
+    "slaveFilter": "En Slave har sin egen filtertæller; nulstil den direkte på enheden."
+  },
+  "mode": {
+    "smart": "Smart",
+    "auto": "Auto",
+    "manual_heat_recovery": "Manuel med varmegenvinding",
+    "night": "Nat",
+    "away_home": "Ude",
+    "surveillance": "Overvågning",
+    "timed_expulsion": "Tidsstyret udsugning",
+    "expulsion": "Udsugning",
+    "intake": "Indblæsning",
+    "master_slave_flow": "Strømning fra Master til Slave",
+    "slave_master_flow": "Strømning fra Slave til Master",
+    "off": "Slukket"
+  },
+  "fan": {
+    "low": "Lav",
+    "medium": "Mellem",
+    "high": "Høj"
+  },
+  "humidity": {
+    "dry": "Tør",
+    "normal": "Normal",
+    "moist": "Fugtig"
+  },
+  "light": {
+    "off": "Fra",
+    "low": "Lav",
+    "high": "Høj"
+  },
+  "air_quality": {
+    "very_good": "Meget god",
+    "good": "God",
+    "medium": "Middel",
+    "poor": "Dårlig",
+    "bad": "Meget dårlig"
+  },
+  "filter": {
+    "bad": "Dårlig",
+    "medium": "Middel",
+    "good": "God"
+  },
+  "role": {
+    "master": "Master",
+    "slave_equal_master": "Slave, samme retning som Master",
+    "slave_opposite_master": "Slave, modsat retning af Master",
+    "not_configured": "Ikke konfigureret"
+  }
+}

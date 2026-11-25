@@ -1,0 +1,22 @@
+{
+  "name": "eu.ambientika",
+  "version": "1.0.0",
+  "description": "Homey app for Ambientika ventilation units with heat recovery (SMART, OFFICE)",
+  "main": "app.js",
+  "private": true,
+  "license": "MIT",
+  "author": "Südwind GmbH <info@ambientika.eu>",
+  "homepage": "https://www.ambientika.eu",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ambientika-eu/homey-ambientika.git"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "scripts": {
+    "compose": "node scripts/compose.js",
+    "test": "node --test --test-concurrency=1 test/*.test.js",
+    "lint": "node scripts/lint.js"
+  }
+}

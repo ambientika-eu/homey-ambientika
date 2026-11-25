@@ -1,0 +1,63 @@
+{
+  "type": "enum",
+  "title": {
+    "en": "Filter Status",
+    "de": "Filter Status",
+    "nl": "Filterstatus",
+    "it": "Stato filtro",
+    "fr": "État du filtre",
+    "es": "Estado del filtro",
+    "da": "Filterstatus",
+    "sv": "Filterstatus",
+    "pl": "Stan filtra"
+  },
+  "getable": true,
+  "setable": false,
+  "uiComponent": "sensor",
+  "icon": "/assets/capabilities/filter.svg",
+  "insights": false,
+  "values": [
+    {
+      "id": "good",
+      "title": {
+        "en": "Good",
+        "de": "gut",
+        "nl": "Goed",
+        "it": "Buono",
+        "fr": "Bon",
+        "es": "Bueno",
+        "da": "God",
+        "sv": "Bra",
+        "pl": "Dobry"
+      }
+    },
+    {
+      "id": "medium",
+      "title": {
+        "en": "Medium",
+        "de": "mittel",
+        "nl": "Matig",
+        "it": "Medio",
+        "fr": "Moyen",
+        "es": "Medio",
+        "da": "Middel",
+        "sv": "Medel",
+        "pl": "Średni"
+      }
+    },
+    {
+      "id": "bad",
+      "title": {
+        "en": "Bad",
+        "de": "schlecht",
+        "nl": "Slecht",
+        "it": "Scarso",
+        "fr": "Mauvais",
+        "es": "Malo",
+        "da": "Dårlig",
+        "sv": "Dålig",
+        "pl": "Zły"
+      }
+    }
+  ]
+}

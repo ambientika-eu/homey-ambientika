@@ -1,0 +1,91 @@
+{
+  "type": "enum",
+  "title": {
+    "en": "Air Quality",
+    "de": "Luftqualität",
+    "nl": "Luchtkwaliteit",
+    "it": "Qualità dell'aria",
+    "fr": "Qualité de l'air",
+    "es": "Calidad del aire",
+    "da": "Luftkvalitet",
+    "sv": "Luftkvalitet",
+    "pl": "Jakość powietrza"
+  },
+  "getable": true,
+  "setable": false,
+  "uiComponent": "sensor",
+  "icon": "/assets/capabilities/air_quality.svg",
+  "insights": false,
+  "values": [
+    {
+      "id": "very_good",
+      "title": {
+        "en": "Very Good",
+        "de": "sehr gut",
+        "nl": "Zeer goed",
+        "it": "Ottima",
+        "fr": "Très bonne",
+        "es": "Muy buena",
+        "da": "Meget god",
+        "sv": "Mycket bra",
+        "pl": "Bardzo dobra"
+      }
+    },
+    {
+      "id": "good",
+      "title": {
+        "en": "Good",
+        "de": "gut",
+        "nl": "Goed",
+        "it": "Buona",
+        "fr": "Bonne",
+        "es": "Buena",
+        "da": "God",
+        "sv": "Bra",
+        "pl": "Dobra"
+      }
+    },
+    {
+      "id": "medium",
+      "title": {
+        "en": "Medium",
+        "de": "mittel",
+        "nl": "Matig",
+        "it": "Media",
+        "fr": "Moyenne",
+        "es": "Media",
+        "da": "Middel",
+        "sv": "Medel",
+        "pl": "Średnia"
+      }
+    },
+    {
+      "id": "poor",
+      "title": {
+        "en": "Poor",
+        "de": "schlecht",
+        "nl": "Slecht",
+        "it": "Scarsa",
+        "fr": "Médiocre",
+        "es": "Mala",
+        "da": "Dårlig",
+        "sv": "Dålig",
+        "pl": "Słaba"
+      }
+    },
+    {
+      "id": "bad",
+      "title": {
+        "en": "Bad",
+        "de": "sehr schlecht",
+        "nl": "Zeer slecht",
+        "it": "Pessima",
+        "fr": "Mauvaise",
+        "es": "Muy mala",
+        "da": "Meget dårlig",
+        "sv": "Mycket dålig",
+        "pl": "Zła"
+      }
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "errors": {
+    "slave": "Deze unit is een Slave en draait mee met de Master van zijn zone. Wijzig de instelling bij de Master.",
+    "offline": "Op dit moment geen verbinding met de Ambientika-cloud. Probeer het zo meteen opnieuw.",
+    "rejected": "De Ambientika-cloud accepteert het e-mailadres en wachtwoord niet. Repareer het apparaat met de gegevens van de Ambientika-app.",
+    "unit": "De unit antwoordt de Ambientika-cloud niet. Staat hij aan en is hij verbonden met de wifi?",
+    "removed": "De unit staat niet meer in het Ambientika-account.",
+    "command": "De Ambientika-cloud heeft het commando niet geaccepteerd: __message__",
+    "login": "E-mailadres of wachtwoord niet geaccepteerd. Gebruik de gegevens van de Ambientika-app.",
+    "connect": "De Ambientika-cloud is niet bereikbaar: __message__",
+    "otherAccount": "Deze unit hoort bij een ander Ambientika-account. Meld u aan met de gegevens waarmee de unit is toegevoegd.",
+    "slaveFilter": "Een Slave heeft een eigen filterteller; reset die op de unit zelf."
+  },
+  "mode": {
+    "smart": "Smart",
+    "auto": "Auto",
+    "manual_heat_recovery": "Handmatig met warmteterugwinning",
+    "night": "Nacht",
+    "away_home": "Afwezig",
+    "surveillance": "Bewaking",
+    "timed_expulsion": "Getimede afvoer",
+    "expulsion": "Afvoer",
+    "intake": "Toevoer",
+    "master_slave_flow": "Stroming van Master naar Slave",
+    "slave_master_flow": "Stroming van Slave naar Master",
+    "off": "Uit"
+  },
+  "fan": {
+    "low": "Laag",
+    "medium": "Middel",
+    "high": "Hoog"
+  },
+  "humidity": {
+    "dry": "Droog",
+    "normal": "Normaal",
+    "moist": "Vochtig"
+  },
+  "light": {
+    "off": "Uit",
+    "low": "Laag",
+    "high": "Hoog"
+  },
+  "air_quality": {
+    "very_good": "Zeer goed",
+    "good": "Goed",
+    "medium": "Matig",
+    "poor": "Slecht",
+    "bad": "Zeer slecht"
+  },
+  "filter": {
+    "bad": "Slecht",
+    "medium": "Matig",
+    "good": "Goed"
+  },
+  "role": {
+    "master": "Master",
+    "slave_equal_master": "Slave, zelfde richting als Master",
+    "slave_opposite_master": "Slave, tegengesteld aan Master",
+    "not_configured": "Niet geconfigureerd"
+  }
+}

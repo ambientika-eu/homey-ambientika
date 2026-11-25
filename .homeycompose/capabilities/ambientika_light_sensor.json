@@ -1,0 +1,62 @@
+{
+  "type": "enum",
+  "title": {
+    "en": "Dusk Sensor Sensitivity",
+    "de": "Empfindlichkeit Dämmerungssensor",
+    "nl": "Gevoeligheid schemersensor",
+    "it": "Sensibilità sensore crepuscolare",
+    "fr": "Sensibilité du capteur crépusculaire",
+    "es": "Sensibilidad del sensor crepuscular",
+    "da": "Følsomhed for skumringssensor",
+    "sv": "Känslighet för skymningssensor",
+    "pl": "Czułość czujnika zmierzchu"
+  },
+  "getable": true,
+  "setable": true,
+  "uiComponent": "picker",
+  "insights": false,
+  "values": [
+    {
+      "id": "off",
+      "title": {
+        "en": "Off",
+        "de": "Aus",
+        "nl": "Uit",
+        "it": "Spento",
+        "fr": "Désactivé",
+        "es": "Apagado",
+        "da": "Fra",
+        "sv": "Av",
+        "pl": "Wyłączony"
+      }
+    },
+    {
+      "id": "low",
+      "title": {
+        "en": "Low",
+        "de": "Niedrig",
+        "nl": "Laag",
+        "it": "Bassa",
+        "fr": "Basse",
+        "es": "Baja",
+        "da": "Lav",
+        "sv": "Låg",
+        "pl": "Niska"
+      }
+    },
+    {
+      "id": "high",
+      "title": {
+        "en": "High",
+        "de": "Hoch",
+        "nl": "Hoog",
+        "it": "Alta",
+        "fr": "Haute",
+        "es": "Alta",
+        "da": "Høj",
+        "sv": "Hög",
+        "pl": "Wysoka"
+      }
+    }
+  ]
+}
