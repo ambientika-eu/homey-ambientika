@@ -1,0 +1,41 @@
+{
+ "h3": {
+  "de": "Homey-App",
+  "en": "Homey app",
+  "it": "App per Homey",
+  "fr": "App Homey",
+  "es": "App para Homey",
+  "nl": "Homey-app",
+  "pl": "Aplikacja Homey",
+  "pt": "App para Homey",
+  "cs": "Aplikace pro Homey",
+  "da": "Homey-app",
+  "sv": "Homey-app"
+ },
+ "text": {
+  "de": "Mit der offiziellen Ambientika-App für Homey erscheint jedes Gerät Ihres Ambientika-Kontos als eigenes Gerät in Homey. Sie stellen Modus, Lüfterstufe, Feuchtestufe und Dämmerungssensor ein, sehen Temperatur, Luftfeuchtigkeit, Luftqualität und Filterstatus und nutzen alles in Flows, zum Beispiel den Modus Abwesend, wenn alle aus dem Haus sind, oder eine Nachricht, wenn die Filter gereinigt werden müssen. Angemeldet wird mit den Zugangsdaten der Ambientika App, zusätzliche Hardware ist nicht nötig. Voraussetzung: Homey Pro oder Homey Pro mini.",
+  "en": "With the official Ambientika app for Homey, every unit of your Ambientika account appears as a device in Homey. You set the operating mode, fan speed, humidity level and light sensor, see temperature, humidity, air quality and filter status, and use all of it in flows, for example Away mode when everybody leaves, or a message when the filters need cleaning. You sign in with the login of the Ambientika app; no extra hardware is needed. Requirement: Homey Pro or Homey Pro mini.",
+  "it": "Con l'app ufficiale Ambientika per Homey, ogni unità del tuo account Ambientika compare come dispositivo in Homey. Imposti modalità, velocità, livello di umidità e sensore crepuscolare, vedi temperatura, umidità, qualità dell'aria e stato del filtro e usi tutto nei flow, per esempio la modalità Assente quando tutti escono di casa, o un messaggio quando i filtri vanno puliti. L'accesso avviene con le credenziali dell'app Ambientika, senza hardware aggiuntivo. Requisito: Homey Pro o Homey Pro mini.",
+  "fr": "Avec l'app officielle Ambientika pour Homey, chaque unité de votre compte Ambientika apparaît comme un appareil dans Homey. Vous réglez le mode, la vitesse, le niveau d'humidité et le capteur crépusculaire, consultez température, humidité, qualité de l'air et état du filtre, et utilisez tout cela dans des flows, par exemple le mode Absent quand tout le monde est sorti, ou un message quand les filtres doivent être nettoyés. La connexion se fait avec les identifiants de l'app Ambientika, sans matériel supplémentaire. Condition : Homey Pro ou Homey Pro mini.",
+  "es": "Con la app oficial de Ambientika para Homey, cada unidad de su cuenta Ambientika aparece como dispositivo en Homey. Ajusta el modo, la velocidad, el nivel de humedad y el sensor crepuscular, ve temperatura, humedad, calidad del aire y estado del filtro, y lo usa todo en flows, por ejemplo el modo Ausente cuando todos salen de casa, o un mensaje cuando hay que limpiar los filtros. El acceso es con los datos de la app Ambientika, sin hardware adicional. Requisito: Homey Pro o Homey Pro mini.",
+  "nl": "Met de officiële Ambientika-app voor Homey verschijnt elke unit van uw Ambientika-account als apparaat in Homey. U stelt modus, ventilatorsnelheid, vochtigheidsniveau en schemersensor in, ziet temperatuur, luchtvochtigheid, luchtkwaliteit en filterstatus en gebruikt alles in flows, bijvoorbeeld de modus Afwezig als iedereen weg is, of een bericht als de filters gereinigd moeten worden. U meldt zich aan met de gegevens van de Ambientika-app; extra hardware is niet nodig. Voorwaarde: Homey Pro of Homey Pro mini.",
+  "pl": "Dzięki oficjalnej aplikacji Ambientika dla Homey każde urządzenie z Twojego konta Ambientika pojawia się w Homey. Ustawiasz tryb, bieg wentylatora, poziom wilgotności i czujnik zmierzchu, widzisz temperaturę, wilgotność, jakość powietrza i stan filtra oraz używasz wszystkiego we flow, na przykład trybu Poza domem, gdy wszyscy wyjdą, lub wiadomości, gdy filtry trzeba wyczyścić. Logujesz się danymi z aplikacji Ambientika, bez dodatkowego sprzętu. Wymagania: Homey Pro lub Homey Pro mini.",
+  "pt": "Com a app oficial Ambientika para Homey, cada unidade da sua conta Ambientika aparece como dispositivo no Homey. Ajusta o modo, a velocidade, o nível de humidade e o sensor crepuscular, vê temperatura, humidade, qualidade do ar e estado do filtro, e usa tudo em flows, por exemplo o modo Ausente quando todos saem de casa, ou uma mensagem quando os filtros precisam de limpeza. O acesso é feito com os dados da app Ambientika, sem hardware adicional. Requisito: Homey Pro ou Homey Pro mini.",
+  "cs": "S oficiální aplikací Ambientika pro Homey se každá jednotka z vašeho účtu Ambientika zobrazí v Homey jako zařízení. Nastavíte režim, stupeň ventilátoru, úroveň vlhkosti a soumrakový senzor, vidíte teplotu, vlhkost, kvalitu vzduchu a stav filtru a vše použijete ve flow, například režim Nepřítomnost, když všichni odejdou, nebo zprávu, když je třeba vyčistit filtry. Přihlašujete se údaji z aplikace Ambientika, další hardware není potřeba. Požadavek: Homey Pro nebo Homey Pro mini.",
+  "da": "Med den officielle Ambientika-app til Homey vises hver enhed på din Ambientika-konto som en enhed i Homey. Du indstiller tilstand, ventilatortrin, fugtniveau og skumringssensor, ser temperatur, luftfugtighed, luftkvalitet og filterstatus og bruger det hele i flows, for eksempel tilstanden Ude, når alle er gået, eller en besked, når filtrene skal rengøres. Du logger ind med login til Ambientika-appen; der skal ikke bruges ekstra hardware. Krav: Homey Pro eller Homey Pro mini.",
+  "sv": "Med den officiella Ambientika-appen för Homey visas varje aggregat i ditt Ambientika-konto som en enhet i Homey. Du ställer in läge, fläktsteg, fuktnivå och skymningssensor, ser temperatur, luftfuktighet, luftkvalitet och filterstatus och använder allt i flöden, till exempel läget Borta när alla har gått, eller ett meddelande när filtren behöver rengöras. Du loggar in med inloggningen till Ambientika-appen; ingen extra hårdvara behövs. Krav: Homey Pro eller Homey Pro mini."
+ },
+ "note": {
+  "de": "Die App ist gerade bei Homey in Prüfung. Bis zur Freigabe im App Store schicken wir Ihnen gern den Link zur Testversion:",
+  "en": "The app is currently being reviewed by Homey. Until it is released in the App Store, we will gladly send you the link to the test version:",
+  "it": "L'app è attualmente in fase di verifica da parte di Homey. Fino alla pubblicazione nell'App Store ti inviamo volentieri il link alla versione di prova:",
+  "fr": "L'app est en cours de vérification chez Homey. En attendant sa publication dans l'App Store, nous vous envoyons volontiers le lien vers la version de test :",
+  "es": "La app está siendo revisada por Homey. Hasta su publicación en la App Store, le enviamos con gusto el enlace a la versión de prueba:",
+  "nl": "De app wordt op dit moment door Homey gecontroleerd. Tot de vrijgave in de App Store sturen we u graag de link naar de testversie:",
+  "pl": "Aplikacja jest obecnie sprawdzana przez Homey. Do czasu publikacji w App Store chętnie wyślemy link do wersji testowej:",
+  "pt": "A app está a ser verificada pela Homey. Até à publicação na App Store, enviamos com todo o gosto o link para a versão de teste:",
+  "cs": "Aplikace je právě v kontrole u Homey. Do zveřejnění v App Store vám rádi pošleme odkaz na testovací verzi:",
+  "da": "Appen bliver i øjeblikket gennemgået af Homey. Indtil den udgives i App Store, sender vi gerne linket til testversionen:",
+  "sv": "Appen granskas just nu av Homey. Tills den släpps i App Store skickar vi gärna länken till testversionen:"
+ }
+}
